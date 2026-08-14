@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Anclajes · Fijaciones RG</title>
+<meta name="description" content="Anclajes de expansión, químicos, autoperforantes, pernos J/L y tarugos. Especificaciones, usos y tiempos de entrega. Cotiza en Fijaciones RG." />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230E0F12'/><path d='M16,4L26,9.5L26,22.5L16,28L6,22.5L6,9.5Z' fill='none' stroke='%23C9A24E' stroke-width='2' stroke-linejoin='round'/><path d='M16,10L21.5,13L21.5,19L16,22L10.5,19L10.5,13Z' fill='%23C9A24E'/></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+/* Fijaciones RG — Fichas de categoría · grafito + oro · Archivo + Plex Mono */
+:root{
+  --ink:#0E0F12; --surface:#16181D; --surface-2:#1E212A; --steel:#2A2E38;
+  --gold:#C9A24E; --gold-bright:#E7C579; --blueprint:#8098B2;
+  --fg:#F3F1EA; --muted:#9AA1AC; --border:rgba(255,255,255,.09); --border-str:rgba(255,255,255,.16);
+  --maxw:1120px; --radius:4px; --ease:cubic-bezier(.22,.61,.36,1);
+  --font-display:"Archivo","Segoe UI",system-ui,sans-serif;
+  --font-mono:"IBM Plex Mono","Consolas",ui-monospace,monospace;
+}
+*,*::before,*::after{ box-sizing:border-box; margin:0; padding:0; }
+html{ scroll-behavior:smooth; }
+@media (prefers-reduced-motion:reduce){ html{ scroll-behavior:auto; } }
+body{ font-family:var(--font-display); background:var(--ink); color:var(--fg); line-height:1.55; -webkit-font-smoothing:antialiased; overflow-x:hidden; }
+::selection{ background:var(--gold); color:#14140E; }
+a{ color:inherit; text-decoration:none; }
+img,svg{ display:block; max-width:100%; }
+.wrap{ width:100%; max-width:var(--maxw); margin-inline:auto; padding-inline:24px; }
+.mono{ font-family:var(--font-mono); }
+.btn{ display:inline-flex; align-items:center; gap:9px; font-family:var(--font-display); font-weight:700; font-size:15px; padding:13px 20px; border-radius:var(--radius); cursor:pointer; border:1px solid transparent; transition:transform .18s var(--ease), background .2s, border-color .2s, color .2s; white-space:nowrap; }
+.btn svg{ width:17px; height:17px; }
+.btn--primary{ background:var(--gold); color:#14140E; }
+.btn--primary:hover{ background:var(--gold-bright); transform:translateY(-2px); }
+.btn--ghost{ background:transparent; color:var(--fg); border-color:var(--border-str); }
+.btn--ghost:hover{ border-color:var(--gold); color:var(--gold); transform:translateY(-2px); }
+.btn:focus-visible{ outline:2px solid var(--gold); outline-offset:3px; }
+.cat-header{ position:sticky; top:0; z-index:40; background:rgba(14,15,18,.9); backdrop-filter:blur(12px); border-bottom:1px solid var(--steel); }
+.cat-header .wrap{ display:flex; align-items:center; justify-content:space-between; padding-block:14px; gap:16px; }
+.brand{ display:flex; align-items:center; gap:12px; }
+.brand__mark{ width:36px; height:36px; border-radius:6px; background:linear-gradient(145deg,#20232c,#0f1116); border:1px solid var(--steel); display:grid; place-items:center; color:var(--gold); }
+.brand__mark svg{ width:22px; height:22px; }
+.brand__name{ font-weight:800; font-size:17px; color:#F3F1EA; }
+.brand__name b{ color:var(--gold); }
+.brand__tag{ display:block; font-family:var(--font-mono); font-size:10px; letter-spacing:.16em; color:#7d828c; text-transform:uppercase; margin-top:-2px; }
+.back-link{ display:inline-flex; align-items:center; gap:8px; font-family:var(--font-mono); font-size:13px; color:var(--muted); transition:color .2s; }
+.back-link:hover{ color:var(--gold); }
+.back-link svg{ width:16px; height:16px; }
+.cat-header__l{ display:flex; align-items:center; gap:20px; }
+.cat-hero{ position:relative; padding:70px 0 48px; border-bottom:1px solid var(--steel); overflow:hidden; }
+.cat-hero::before{ content:""; position:absolute; inset:0; background-image:linear-gradient(rgba(255,255,255,.028) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.028) 1px,transparent 1px); background-size:44px 44px; mask-image:radial-gradient(120% 90% at 80% 10%,#000 30%,transparent 75%); }
+.cat-hero::after{ content:""; position:absolute; top:-20%; right:-6%; width:520px; height:520px; background:radial-gradient(circle,rgba(201,162,78,.14),transparent 62%); pointer-events:none; }
+.cat-hero .wrap{ position:relative; z-index:2; }
+.crumb{ font-family:var(--font-mono); font-size:12px; letter-spacing:.06em; color:var(--muted); display:flex; gap:8px; flex-wrap:wrap; margin-bottom:22px; }
+.crumb a:hover{ color:var(--gold); }
+.crumb span{ color:var(--gold); }
+.cat-hero h1{ font-family:var(--font-display); font-weight:900; font-size:clamp(34px,5.4vw,60px); line-height:1.02; letter-spacing:-.02em; }
+.cat-hero p{ color:var(--muted); font-size:clamp(15px,1.6vw,18px); max-width:62ch; margin-top:18px; }
+.hero-stats{ margin-top:34px; display:flex; flex-wrap:wrap; gap:0; border-top:1px solid var(--steel); }
+.hero-stats .hs{ padding:16px 26px 6px 0; margin-right:26px; border-right:1px solid var(--steel); }
+.hero-stats .hs:last-child{ border-right:none; }
+.hero-stats b{ display:block; font-family:var(--font-mono); font-size:20px; color:#fff; }
+.hero-stats span{ font-size:12px; color:#868c96; }
+.pd-list{ padding:64px 0 40px; display:flex; flex-direction:column; gap:64px; }
+.prod-detail{ scroll-margin-top:90px; display:grid; grid-template-columns:1fr 1fr; gap:44px; align-items:center; }
+.prod-detail:nth-child(even) .pd-media{ order:2; }
+.pd-media{ border:1px solid var(--steel); border-radius:10px; overflow:hidden; aspect-ratio:4/3; background:var(--surface-2); position:relative; }
+.pd-media img{ width:100%; height:100%; object-fit:cover; transition:transform .6s var(--ease); }
+.prod-detail:hover .pd-media img{ transform:scale(1.04); }
+.pd-media__tag{ position:absolute; top:14px; left:14px; font-family:var(--font-mono); font-size:10.5px; letter-spacing:.14em; text-transform:uppercase; color:#fff; background:rgba(11,12,15,.7); border:1px solid var(--steel); padding:5px 10px; border-radius:4px; }
+.pd-info .ey{ font-family:var(--font-mono); font-size:12px; letter-spacing:.16em; text-transform:uppercase; color:var(--gold); }
+.pd-info h2{ font-family:var(--font-display); font-weight:800; font-size:clamp(24px,3vw,34px); line-height:1.06; letter-spacing:-.02em; margin-top:10px; }
+.pd-info .desc{ color:var(--muted); font-size:16px; margin-top:14px; }
+.lead-badge{ display:inline-flex; align-items:center; gap:9px; margin-top:20px; padding:9px 15px; border:1px solid rgba(201,162,78,.4); background:rgba(201,162,78,.08); border-radius:100px; font-family:var(--font-mono); font-size:12.5px; color:var(--gold-bright); }
+.lead-badge svg{ width:15px; height:15px; flex:0 0 auto; }
+.spec-table{ margin-top:24px; border-top:1px solid var(--steel); }
+.spec-row{ display:grid; grid-template-columns:150px 1fr; gap:14px; padding:11px 0; border-bottom:1px solid var(--steel); }
+.spec-row dt{ font-family:var(--font-mono); font-size:12.5px; letter-spacing:.04em; text-transform:uppercase; color:#868c96; }
+.spec-row dd{ font-size:14.5px; color:var(--fg); }
+.use-title{ margin-top:24px; font-family:var(--font-mono); font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:#868c96; margin-bottom:12px; }
+.use-list{ display:flex; flex-wrap:wrap; gap:9px; }
+.use-list span{ font-size:13px; padding:7px 13px; border:1px solid var(--border); border-radius:100px; color:#c3c8d1; background:var(--surface); }
+.pd-cta{ margin-top:28px; display:flex; gap:12px; flex-wrap:wrap; }
+.cat-band{ background:#0b0c0f; border-top:1px solid var(--steel); padding:60px 0; text-align:center; }
+.cat-band h3{ font-size:clamp(24px,3.4vw,36px); font-weight:900; color:#fff; }
+.cat-band h3 em{ font-style:normal; color:var(--gold); }
+.cat-band p{ color:var(--muted); margin-top:12px; }
+.cat-band .btn{ margin-top:24px; }
+.cross{ display:flex; gap:16px; justify-content:center; flex-wrap:wrap; margin-top:34px; }
+.cross a{ font-family:var(--font-mono); font-size:13px; color:var(--muted); border:1px solid var(--steel); padding:11px 18px; border-radius:100px; transition:all .2s var(--ease); }
+.cross a:hover{ border-color:var(--gold); color:var(--gold); }
+.cat-footer{ background:#08090c; border-top:1px solid var(--steel); padding:34px 0; }
+.cat-footer .wrap{ display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; align-items:center; font-family:var(--font-mono); font-size:12.5px; color:#5f6672; }
+.cat-footer a:hover{ color:var(--gold); }
+@media (max-width:820px){
+  .prod-detail{ grid-template-columns:1fr; gap:26px; }
+  .prod-detail:nth-child(even) .pd-media{ order:0; }
+  .cat-header .wrap > .btn{ display:none; }
+}
+@media (max-width:520px){
+  .spec-row{ grid-template-columns:1fr; gap:2px; }
+  .hero-stats .hs{ margin-right:16px; padding-right:16px; }
+}
+</style>
+</head>
+<body>
+
+<header class="cat-header">
+  <div class="wrap">
+    <div class="cat-header__l">
+      <a class="back-link" href="../index.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+        Volver al inicio
+      </a>
+      <a class="brand" href="../index.html" aria-label="Fijaciones RG, inicio">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none"><path d="M16 2.6 27 9 V23 L16 29.4 5 23 V9 Z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M16 9.4 22.4 13 V19.8 L16 23.4 9.6 19.8 V13 Z" fill="currentColor"/><circle cx="16" cy="16.4" r="1.7" fill="#14140E"/></svg>
+        </span>
+        <span><span class="brand__name">Fijaciones <b>RG</b></span><span class="brand__tag">Tornería · Fijaciones</span></span>
+      </a>
+    </div>
+    <a class="btn btn--primary" href="../index.html#cotizar">Cotizar</a>
+  </div>
+</header>
+
+<section class="cat-hero">
+  <div class="wrap">
+    <nav class="crumb" aria-label="Ruta">
+      <a href="../index.html">Inicio</a> / <a href="../index.html#productos">Productos</a> / <span>Anclajes</span>
+    </nav>
+    <h1>Anclajes</h1>
+    <p>Anclaje seguro a hormigón, ladrillo y estructura. De expansión, químicos, autoperforantes y pernos empotrados a la medida del proyecto. Con factura desde el primer pedido y despacho propio en Santiago.</p>
+    <div class="hero-stats">
+      <div class="hs"><b>6 tipos</b><span>en catálogo</span></div>
+      <div class="hs"><b>M8–M24</b><span>rango de medidas</span></div>
+      <div class="hs"><b>24–48 h</b><span>entrega en stock</span></div>
+      <div class="hs"><b>Zincado · Inox</b><span>terminados</span></div>
+    </div>
+  </div>
+</section>
+
+<main class="wrap">
+  <div class="pd-list">
+
+    <!-- Expansión -->
+    <article class="prod-detail" id="anclaje-de-expansion">
+      <div class="pd-media">
+        <span class="pd-media__tag">FRG-ANC-EX</span>
+        <img loading="lazy" referrerpolicy="no-referrer" alt="Anclaje de expansión" src="https://images.pexels.com/photos/17373000/pexels-photo-17373000.jpeg?auto=compress&cs=tinysrgb&w=1200&h=900&fit=crop">
+      </div>
+      <div class="pd-info">
+        <div class="ey">Anclaje · Mecánico</div>
+        <h2>Anclaje de expansión</h2>
+        <p class="desc">Perno de camisa expansible para hormigón; al apretar, la camisa se abre y agarra las paredes de la perforación con alta resistencia al arranque.</p>
+        <div class="lead-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>En stock · entrega 24–48 h</div>
+        <dl class="spec-table">
+          <div class="spec-row"><dt>Medida</dt><dd>M8 a M20</dd></div>
+          <div class="spec-row"><dt>Material</dt><dd>Acero zincado</dd></div>
+          <div class="spec-row"><dt>Tipo</dt><dd>Cuña</dd></div>
+          <div class="spec-row"><dt>Base</dt><dd>Hormigón macizo</dd></div>
+        </dl>
+        <div class="use-title">Usos frecuentes</div>
+        <div class="use-list"><span>Estructura a hormigón</span><span>Máquinas y equipos</span><span>Barandas y soportes</span></div>
+        <div class="pd-cta">
+          <a class="btn btn--primary" href="../index.html#cotizar">Cotizar este producto</a>
+          <a class="btn btn--ghost" href="https://wa.me/56920488227?text=Hola,%20quiero%20cotizar%20anclajes%20de%20expansi%C3%B3n." target="_blank" rel="noopener">Consultar por WhatsApp</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Químico -->
+    <article class="prod-detail" id="anclaje-quimico">
+      <div class="pd-media">
+        <span class="pd-media__tag">FRG-ANC-QM</span>
+        <img loading="lazy" referrerpolicy="no-referrer" alt="Anclaje químico" src="https://images.pexels.com/photos/17372998/pexels-photo-17372998.jpeg?auto=compress&cs=tinysrgb&w=1200&h=900&fit=crop">
+      </div>
+      <div class="pd-info">
+        <div class="ey">Anclaje · Resina</div>
+        <h2>Anclaje químico</h2>
+        <p class="desc">Varilla más resina epóxica para máxima carga, incluso en hormigón fisurado y ante cargas dinámicas. La resina rellena la perforación y transmite el esfuerzo de forma uniforme.</p>
+        <div class="lead-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>En stock · entrega 24–48 h</div>
+        <dl class="spec-table">
+          <div class="spec-row"><dt>Medida</dt><dd>M8 a M24</dd></div>
+          <div class="spec-row"><dt>Resina</dt><dd>Epóxica</dd></div>
+          <div class="spec-row"><dt>Carga</dt><dd>Alta</dd></div>
+          <div class="spec-row"><dt>Base</dt><dd>Hormigón fisurado</dd></div>
+        </dl>
+        <div class="use-title">Usos frecuentes</div>
+        <div class="use-list"><span>Alta carga estructural</span><span>Cargas dinámicas</span><span>Reforzamiento</span></div>
+        <div class="pd-cta">
+          <a class="btn btn--primary" href="../index.html#cotizar">Cotizar este producto</a>
+          <a class="btn btn--ghost" href="https://wa.me/56920488227?text=Hola,%20quiero%20cotizar%20anclajes%20qu%C3%ADmicos." target="_blank" rel="noopener">Consultar por WhatsApp</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Autoperforante -->
+    <article class="prod-detail" id="anclaje-autoperforante">
+      <div class="pd-media">
+        <span class="pd-media__tag">FRG-ANC-AP</span>
+        <img loading="lazy" referrerpolicy="no-referrer" alt="Anclaje autoperforante" src="https://images.pexels.com/photos/28197097/pexels-photo-28197097.jpeg?auto=compress&cs=tinysrgb&w=1200&h=900&fit=crop">
+      </div>
+      <div class="pd-info">
+        <div class="ey">Anclaje · Directo</div>
+        <h2>Anclaje autoperforante</h2>
+        <p class="desc">Rosca cortante con punta de broca para fijación directa sin tarugo en materiales de baja densidad. Ahorra el paso de perforar por separado.</p>
+        <div class="lead-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>En stock · entrega 24–48 h</div>
+        <dl class="spec-table">
+          <div class="spec-row"><dt>Diámetro</dt><dd>Ø 6 a 10 mm</dd></div>
+          <div class="spec-row"><dt>Punta</dt><dd>Broca</dd></div>
+          <div class="spec-row"><dt>Terminado</dt><dd>Bicromatado</dd></div>
+        </dl>
+        <div class="use-title">Usos frecuentes</div>
+        <div class="use-list"><span>Fijación directa</span><span>Materiales blandos</span><span>Montaje rápido</span></div>
+        <div class="pd-cta">
+          <a class="btn btn--primary" href="../index.html#cotizar">Cotizar este producto</a>
+          <a class="btn btn--ghost" href="https://wa.me/56920488227?text=Hola,%20quiero%20cotizar%20anclajes%20autoperforantes." target="_blank" rel="noopener">Consultar por WhatsApp</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Perno J / L -->
+    <article class="prod-detail" id="perno-j-l-de-anclaje">
+      <div class="pd-media">
+        <span class="pd-media__tag">FRG-ANC-JL</span>
+        <img loading="lazy" referrerpolicy="no-referrer" alt="Perno J o L de anclaje" src="https://images.pexels.com/photos/21050460/pexels-photo-21050460.jpeg?auto=compress&cs=tinysrgb&w=1200&h=900&fit=crop">
+      </div>
+      <div class="pd-info">
+        <div class="ey">Anclaje · Empotrado</div>
+        <h2>Perno J / L de anclaje</h2>
+        <p class="desc">Para empotrar en fundaciones y bases de máquina antes del vaciado de hormigón. Se fabrica a la medida y forma exacta del proyecto.</p>
+        <div class="lead-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3v4M10 3v4M6 7h12l-1 12H7z"/></svg>Fabricación · 3–5 días hábiles</div>
+        <dl class="spec-table">
+          <div class="spec-row"><dt>Forma</dt><dd>Tipo J o L</dd></div>
+          <div class="spec-row"><dt>Grado</dt><dd>4.6 / 8.8</dd></div>
+          <div class="spec-row"><dt>Terminado</dt><dd>Galvanizado</dd></div>
+          <div class="spec-row"><dt>Fabricación</dt><dd>A pedido</dd></div>
+        </dl>
+        <div class="use-title">Usos frecuentes</div>
+        <div class="use-list"><span>Fundaciones</span><span>Bases de máquina</span><span>Anclaje estructural</span></div>
+        <div class="pd-cta">
+          <a class="btn btn--primary" href="../index.html#cotizar">Cotizar este producto</a>
+          <a class="btn btn--ghost" href="https://wa.me/56920488227?text=Hola,%20quiero%20cotizar%20pernos%20J%2FL%20de%20anclaje." target="_blank" rel="noopener">Consultar por WhatsApp</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Tarugo -->
+    <article class="prod-detail" id="tarugo-de-expansion">
+      <div class="pd-media">
+        <span class="pd-media__tag">FRG-ANC-TR</span>
+        <img loading="lazy" referrerpolicy="no-referrer" alt="Tarugo de expansión" src="https://images.pexels.com/photos/5583051/pexels-photo-5583051.jpeg?auto=compress&cs=tinysrgb&w=1200&h=900&fit=crop">
+      </div>
+      <div class="pd-info">
+        <div class="ey">Anclaje · Tarugo</div>
+        <h2>Tarugo de expansión</h2>
+        <p class="desc">De nylon y metálico en todas las medidas. Se expande al entrar el tornillo y agarra el muro. Combinable con el tornillo adecuado según la carga.</p>
+        <div class="lead-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>En stock · entrega 24–48 h</div>
+        <dl class="spec-table">
+          <div class="spec-row"><dt>Medida</dt><dd>S5 a S14</dd></div>
+          <div class="spec-row"><dt>Material</dt><dd>Nylon o metálico</dd></div>
+          <div class="spec-row"><dt>Stock</dt><dd>Permanente</dd></div>
+        </dl>
+        <div class="use-title">Usos frecuentes</div>
+        <div class="use-list"><span>Fijación en muro</span><span>Tabiquería</span><span>Uso general</span></div>
+        <div class="pd-cta">
+          <a class="btn btn--primary" href="../index.html#cotizar">Cotizar este producto</a>
+          <a class="btn btn--ghost" href="https://wa.me/56920488227?text=Hola,%20quiero%20cotizar%20tarugos%20de%20expansi%C3%B3n." target="_blank" rel="noopener">Consultar por WhatsApp</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Especial -->
+    <article class="prod-detail" id="anclaje-especial">
+      <div class="pd-media">
+        <span class="pd-media__tag">FRG-ANC-SP</span>
+        <img loading="lazy" referrerpolicy="no-referrer" alt="Anclaje especial" src="https://images.pexels.com/photos/8327959/pexels-photo-8327959.jpeg?auto=compress&cs=tinysrgb&w=1200&h=900&fit=crop">
+      </div>
+      <div class="pd-info">
+        <div class="ey">Anclaje · A pedido</div>
+        <h2>Anclaje especial</h2>
+        <p class="desc">Medida o material fuera de norma. Lo mecanizamos según tu ficha, plano o muestra, incluido acero inoxidable para ambientes corrosivos.</p>
+        <div class="lead-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 7v10M20 7v10M4 17h16M9 7v10M15 7v10"/></svg>Cotización con plazo según pieza</div>
+        <dl class="spec-table">
+          <div class="spec-row"><dt>Base</dt><dd>Contra plano o muestra</dd></div>
+          <div class="spec-row"><dt>Material</dt><dd>Inox 316 y otros</dd></div>
+          <div class="spec-row"><dt>Volumen</dt><dd>Serie</dd></div>
+        </dl>
+        <div class="use-title">Usos frecuentes</div>
+        <div class="use-list"><span>Ambientes corrosivos</span><span>Proyectos especiales</span><span>Series</span></div>
+        <div class="pd-cta">
+          <a class="btn btn--primary" href="../index.html#cotizar">Enviar mi plano</a>
+          <a class="btn btn--ghost" href="https://wa.me/56920488227?text=Hola,%20necesito%20un%20anclaje%20especial." target="_blank" rel="noopener">Consultar por WhatsApp</a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</main>
+
+<section class="cat-band">
+  <div class="wrap">
+    <h3>¿Anclaje para carga alta? <em>Te asesoramos</em>.</h3>
+    <p>Cuéntanos la base, la carga y el ambiente, y te recomendamos el anclaje correcto.</p>
+    <a class="btn btn--primary" href="../index.html#cotizar">Pedir cotización</a>
+    <div class="cross">
+      <a href="abrazaderas.html">Ver abrazaderas →</a>
+      <a href="../index.html#servicios">Hilos y cortes a medida →</a>
+      <a href="../index.html">Volver al inicio →</a>
+    </div>
+  </div>
+</section>
+
+<footer class="cat-footer">
+  <div class="wrap">
+    <span>© 2026 Fijaciones RG · Sitio de demostración</span>
+    <span><a href="https://wa.me/56920488227" target="_blank" rel="noopener">WhatsApp +56 9 2048 8227</a> · <a href="mailto:fijaciones.rg@gmail.com">fijaciones.rg@gmail.com</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

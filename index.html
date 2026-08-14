@@ -1,0 +1,1927 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Fijaciones RG · Abrazaderas y anclajes de grado industrial</title>
+<meta name="description" content="Torneria y fijaciones. Fabricamos, cortamos y roscamos a pedido. Abrazaderas y anclajes con stock inmediato, despacho propio y facturacion formal. Entrega 24-48h en Santiago." />
+
+<!-- ► SUPUESTO: reemplaza el dominio real cuando publiques -->
+<link rel="canonical" href="https://fijacionesrg.cl/" />
+<meta name="robots" content="index,follow" />
+<meta name="theme-color" content="#0E0F12" />
+<meta name="author" content="Fijaciones RG" />
+<meta name="geo.region" content="CL-RM" />
+<meta name="geo.placename" content="Independencia, Santiago" />
+
+<!-- Favicon (marca inline, sin request extra) -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230E0F12'/%3E%3Cpath d='M16 5 25 10 V21 L16 26 7 21 V10 Z' fill='none' stroke='%23C9A24E' stroke-width='2'/%3E%3Cpath d='M16 10.5 20.8 13.4 V19 L16 21.8 11.2 19 V13.4 Z' fill='%23C9A24E'/%3E%3C/svg%3E" />
+
+<!-- Open Graph / redes -->
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="es_CL" />
+<meta property="og:site_name" content="Fijaciones RG" />
+<meta property="og:title" content="Fijaciones RG · Abrazaderas y anclajes de grado industrial" />
+<meta property="og:description" content="Fabricamos, cortamos y roscamos a pedido. Stock inmediato, despacho propio y factura desde el primer pedido. Entrega 24–48h en Santiago." />
+<meta property="og:url" content="https://fijacionesrg.cl/" />
+<meta property="og:image" content="https://fijacionesrg.cl/og-fijaciones-rg.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Fijaciones RG · Abrazaderas y anclajes de grado industrial" />
+<meta name="twitter:description" content="Stock inmediato, despacho propio y factura desde el primer pedido. Entrega 24–48h en Santiago." />
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230E0F12'/><path d='M16,4L26,9.5L26,22.5L16,28L6,22.5L6,9.5Z' fill='none' stroke='%23C9A24E' stroke-width='2' stroke-linejoin='round'/><path d='M16,10L21.5,13L21.5,19L16,22L10.5,19L10.5,13Z' fill='%23C9A24E'/></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  /* ============================================================
+     FIJACIONES RG — Landing "Precisión mecanizada"
+     Paleta grafito + oro zincado. Archivo + IBM Plex Mono.
+     ============================================================ */
+
+  :root{
+    --ink:        #0E0F12;
+    --surface:    #16181D;
+    --surface-2:  #1E212A;
+    --steel:      #2A2E38;
+    --gold:       #C9A24E;
+    --gold-bright:#E7C579;
+    --blueprint:  #8098B2;
+    --paper:      #F1EEE6;
+    --paper-2:    #E7E2D6;
+
+    /* Semantic tokens (dark defaults) */
+    --bg:        var(--ink);
+    --fg:        #F3F1EA;
+    --muted:     #9AA1AC;
+    --card:      var(--surface);
+    --card-2:    var(--surface-2);
+    --border:    rgba(255,255,255,.09);
+    --border-str:rgba(255,255,255,.16);
+    --accent:    var(--gold);
+    --accent-2:  var(--blueprint);
+    --on-accent: #14140E;
+
+    --maxw: 1200px;
+    --radius: 4px;
+    --ease: cubic-bezier(.22,.61,.36,1);
+    --font-display: "Archivo", "Segoe UI", system-ui, sans-serif;
+    --font-mono: "IBM Plex Mono", "Consolas", ui-monospace, monospace;
+  }
+
+  /* Light "blueprint paper" band scope */
+  .band--paper{
+    --bg:      var(--paper);
+    --fg:      #191B1F;
+    --muted:   #5B616B;
+    --card:    #F7F4EC;
+    --card-2:  #FBF9F3;
+    --border:  rgba(20,22,26,.14);
+    --border-str: rgba(20,22,26,.28);
+    --on-accent: #14140E;
+  }
+
+  *,*::before,*::after{ box-sizing:border-box; margin:0; padding:0; }
+  html{ scroll-behavior:smooth; -webkit-text-size-adjust:100%; }
+  @media (prefers-reduced-motion: reduce){ html{ scroll-behavior:auto; } }
+
+  body{
+    font-family:var(--font-display);
+    background:var(--ink);
+    color:#F3F1EA;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+
+  ::selection{ background:var(--gold); color:#14140E; }
+
+  a{ color:inherit; text-decoration:none; }
+  img,svg{ display:block; max-width:100%; }
+
+  .wrap{ width:100%; max-width:var(--maxw); margin-inline:auto; padding-inline:24px; }
+
+  /* Bands establish local color context */
+  .band{ background:var(--bg); color:var(--fg); position:relative; }
+  .band > .wrap{ padding-block:96px; }
+
+  /* ---------- Shared type ---------- */
+  .eyebrow{
+    font-family:var(--font-mono);
+    font-size:12px; font-weight:500;
+    letter-spacing:.22em; text-transform:uppercase;
+    color:var(--accent);
+    display:inline-flex; align-items:center; gap:10px;
+  }
+  .eyebrow::before{ content:""; width:26px; height:1px; background:var(--accent); display:inline-block; }
+
+  h1,h2,h3{ font-family:var(--font-display); font-weight:800; line-height:1.02; letter-spacing:-.02em; }
+  .h2{ font-size:clamp(30px,4.4vw,52px); font-weight:800; color:var(--fg); }
+  .lead{ color:var(--muted); font-size:clamp(16px,1.6vw,19px); max-width:60ch; }
+  .mono{ font-family:var(--font-mono); }
+
+  /* ---------- Buttons ---------- */
+  .btn{
+    display:inline-flex; align-items:center; gap:10px;
+    font-family:var(--font-display); font-weight:700; font-size:15px;
+    padding:14px 22px; border-radius:var(--radius);
+    cursor:pointer; border:1px solid transparent;
+    transition:transform .18s var(--ease), background .2s var(--ease), border-color .2s var(--ease), color .2s var(--ease);
+    white-space:nowrap;
+  }
+  .btn svg{ width:18px; height:18px; }
+  .btn--primary{ background:var(--accent); color:var(--on-accent); box-shadow:0 1px 0 rgba(255,255,255,.25) inset; }
+  .btn--primary:hover{ background:var(--gold-bright); transform:translateY(-2px); }
+  .btn--ghost{ background:transparent; color:var(--fg); border-color:var(--border-str); }
+  .btn--ghost:hover{ border-color:var(--accent); color:var(--accent); transform:translateY(-2px); }
+  .btn:focus-visible{ outline:2px solid var(--accent); outline-offset:3px; }
+
+  /* ============================================================
+     HEADER
+     ============================================================ */
+  .header{
+    position:fixed; inset:0 0 auto 0; z-index:60;
+    transition:background .3s var(--ease), border-color .3s var(--ease), backdrop-filter .3s;
+    border-bottom:1px solid transparent;
+  }
+  .header.scrolled{
+    background:rgba(14,15,18,.82);
+    backdrop-filter:blur(12px);
+    border-bottom-color:var(--steel);
+  }
+  .header .wrap{ display:flex; align-items:center; justify-content:space-between; padding-block:16px; }
+  .brand{ display:flex; align-items:center; gap:12px; }
+  .brand__mark{
+    width:38px; height:38px; border-radius:6px;
+    background:linear-gradient(145deg,#20232c,#0f1116);
+    border:1px solid var(--steel);
+    display:grid; place-items:center; color:var(--gold);
+    box-shadow:0 6px 18px rgba(0,0,0,.4);
+  }
+  .brand__mark svg{ width:22px; height:22px; }
+  .brand__name{ font-weight:800; letter-spacing:-.01em; font-size:18px; color:#F3F1EA; white-space:nowrap; }
+  .brand__name b{ color:var(--gold); font-weight:800; }
+  .brand__tag{ display:block; font-family:var(--font-mono); font-size:10px; letter-spacing:.18em; color:#7d828c; text-transform:uppercase; margin-top:-2px; }
+
+  .nav{ display:flex; align-items:center; gap:24px; }
+  .nav a{ font-size:14.5px; font-weight:500; color:#c7ccd4; transition:color .2s; position:relative; }
+  .nav a:hover{ color:#fff; }
+  .nav a::after{ content:""; position:absolute; left:0; bottom:-6px; width:0; height:1.5px; background:var(--gold); transition:width .25s var(--ease); }
+  .nav a:hover::after{ width:100%; }
+  .header .btn--primary{ padding:11px 18px; font-size:14px; }
+  .menu-toggle{ display:none; background:none; border:1px solid var(--steel); color:#fff; width:42px; height:42px; border-radius:6px; cursor:pointer; }
+
+  /* ============================================================
+     HERO
+     ============================================================ */
+  .hero{ padding-top:122px; padding-bottom:70px; position:relative; overflow:hidden; }
+  .hero::before{ /* grid blueprint texture */
+    content:""; position:absolute; inset:0; z-index:0; pointer-events:none;
+    background-image:
+      linear-gradient(rgba(255,255,255,.028) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.028) 1px, transparent 1px);
+    background-size:44px 44px;
+    mask-image:radial-gradient(120% 90% at 70% 20%, #000 30%, transparent 75%);
+  }
+  .hero::after{ /* warm glow behind visual */
+    content:""; position:absolute; top:-10%; right:-8%; width:640px; height:640px; z-index:0;
+    background:radial-gradient(circle, rgba(201,162,78,.16), transparent 62%);
+    pointer-events:none;
+  }
+  .hero .wrap{ position:relative; z-index:2; display:grid; grid-template-columns:1.05fr .95fr; gap:56px; align-items:start; }
+
+  .hero__eyebrow{ margin-bottom:22px; }
+  .hero h1{ font-size:clamp(38px,6vw,74px); font-weight:900; }
+  .hero h1 .shimmer{ display:inline-block; }
+  .hero__sub{ margin-top:24px; color:#b6bcc6; font-size:clamp(16px,1.7vw,19.5px); max-width:52ch; }
+  .hero__cta{ margin-top:34px; display:flex; gap:14px; flex-wrap:wrap; }
+
+  .hero__stats{ margin-top:44px; display:grid; grid-template-columns:repeat(4,1fr); gap:0; border-top:1px solid var(--steel); }
+  .stat{ padding:18px 12px 4px; text-align:center; border-right:1px solid var(--steel); }
+  .stat:last-child{ border-right:none; }
+  .stat__n{ font-family:var(--font-mono); font-size:22px; font-weight:600; color:#fff; letter-spacing:-.01em; }
+  .stat__l{ font-size:12px; color:#868c96; margin-top:3px; line-height:1.35; }
+
+  /* metallic shimmer text */
+  .shimmer{
+    background:linear-gradient(100deg,
+      var(--gold) 0%, var(--gold) 34%,
+      #fff6e0 46%, var(--gold-bright) 52%, var(--gold) 62%, var(--gold) 100%);
+    background-size:220% 100%;
+    -webkit-background-clip:text; background-clip:text;
+    color:transparent;
+    animation:shimmer 4.6s linear infinite;
+  }
+  @keyframes shimmer{ 0%{ background-position:180% 0; } 100%{ background-position:-80% 0; } }
+
+  /* ---- Hero blueprint visual (SVG) ---- */
+  .blueprint{
+    position:relative;
+    border:1px solid var(--steel);
+    border-radius:8px;
+    background:
+      linear-gradient(180deg, rgba(30,33,42,.6), rgba(16,18,22,.9)),
+      radial-gradient(120% 100% at 50% 0%, rgba(128,152,178,.10), transparent 60%);
+    padding:20px;
+    box-shadow:0 40px 80px -30px rgba(0,0,0,.7);
+  }
+  .blueprint__tag{
+    position:absolute; top:14px; left:16px; z-index:3;
+    font-family:var(--font-mono); font-size:10.5px; letter-spacing:.16em; text-transform:uppercase; color:#8098b2;
+  }
+  .blueprint__rev{
+    position:absolute; top:14px; right:16px; z-index:3;
+    font-family:var(--font-mono); font-size:10.5px; letter-spacing:.12em; color:#5f6672;
+  }
+  .bp-svg{ width:100%; height:auto; }
+  .bp-line{ stroke:#8098b2; stroke-width:1; fill:none; }
+  .bp-cota{ stroke:#C9A24E; stroke-width:1; fill:none; }
+  .bp-steel{ fill:#3a3f4a; stroke:#565d6a; stroke-width:1.4; }
+  .bp-steel-2{ fill:#2b2f38; stroke:#4a505c; stroke-width:1.4; }
+  .bp-thread{ stroke:#C9A24E; stroke-width:1.2; opacity:.9; }
+  .bp-label{ font-family:"IBM Plex Mono", monospace; font-size:11px; fill:#C9A24E; }
+  .bp-dim{ font-family:"IBM Plex Mono", monospace; font-size:10px; fill:#a9b6c6; }
+  .draw{ stroke-dasharray:1; stroke-dashoffset:0; }
+
+  /* ============================================================
+     MARQUEE
+     ============================================================ */
+  .marquee{ border-block:1px solid var(--steel); background:#0b0c0f; overflow:hidden; }
+  .marquee__track{ display:flex; gap:0; width:max-content; animation:marq 34s linear infinite; }
+  .marquee:hover .marquee__track{ animation-play-state:paused; }
+  .marquee__item{
+    display:flex; align-items:center; gap:14px;
+    padding:16px 30px; font-family:var(--font-mono); font-size:13px; letter-spacing:.06em;
+    color:#aeb4be; white-space:nowrap;
+  }
+  .marquee__item b{ color:var(--gold); font-weight:600; }
+  .marquee__dot{ width:5px; height:5px; border-radius:50%; background:var(--steel); }
+  @keyframes marq{ from{ transform:translateX(0); } to{ transform:translateX(-50%); } }
+
+  /* ============================================================
+     SECTION HEADER
+     ============================================================ */
+  .sec-head{ max-width:760px; margin-bottom:52px; }
+  .sec-head .eyebrow{ margin-bottom:18px; }
+  .sec-head p{ margin-top:18px; }
+
+  /* ============================================================
+     PRODUCTS (abrazaderas / anclajes) — paper band
+     ============================================================ */
+  .split-tabs{ display:flex; gap:8px; margin-bottom:34px; flex-wrap:wrap; }
+  .tab{
+    font-family:var(--font-mono); font-size:12px; letter-spacing:.12em; text-transform:uppercase;
+    padding:9px 16px; border:1px solid var(--border-str); border-radius:100px; cursor:pointer;
+    background:transparent; color:var(--muted); transition:all .2s var(--ease);
+  }
+  .tab[aria-selected="true"]{ background:var(--fg); color:var(--bg); border-color:var(--fg); }
+  .tab:hover:not([aria-selected="true"]){ border-color:var(--accent); color:var(--fg); }
+
+  .prod-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+  .prod-panel{ display:none; }
+  .prod-panel.active{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; animation:fadeUp .5s var(--ease); }
+
+  .pcard{
+    background:var(--card); border:1px solid var(--border); border-radius:var(--radius);
+    padding:24px; position:relative; overflow:hidden;
+    transition:transform .25s var(--ease), border-color .25s var(--ease), box-shadow .25s var(--ease);
+  }
+  .pcard::after{ content:""; position:absolute; left:0; top:0; height:100%; width:3px; background:var(--accent); transform:scaleY(0); transform-origin:top; transition:transform .3s var(--ease); }
+  .pcard:hover{ transform:translateY(-4px); border-color:var(--border-str); box-shadow:0 24px 50px -28px rgba(0,0,0,.35); }
+  .pcard:hover::after{ transform:scaleY(1); }
+  .pcard__ico{ width:44px; height:44px; color:var(--accent); margin-bottom:18px; }
+  .pcard__ico svg{ width:100%; height:100%; stroke-width:1.4; }
+  .pcard h3{ font-size:20px; font-weight:700; color:var(--fg); }
+  .pcard p{ color:var(--muted); font-size:14.5px; margin-top:8px; }
+  .pcard__spec{ margin-top:16px; display:flex; flex-wrap:wrap; gap:6px; }
+  .chip{ font-family:var(--font-mono); font-size:11px; padding:4px 9px; border:1px solid var(--border); border-radius:3px; color:var(--muted); background:var(--card-2); }
+
+  /* ============================================================
+     SERVICES (hilos / cortes / fabricacion)
+     ============================================================ */
+  .serv-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+  .scard{
+    border:1px solid var(--border); border-radius:var(--radius); padding:32px 28px;
+    background:linear-gradient(180deg, var(--card-2), var(--card));
+    position:relative; transition:transform .25s var(--ease), border-color .25s var(--ease);
+  }
+  .scard:hover{ transform:translateY(-5px); border-color:var(--accent); }
+  .scard__n{ font-family:var(--font-mono); font-size:12px; color:var(--accent); letter-spacing:.14em; }
+  .scard h3{ font-size:22px; margin-top:14px; color:var(--fg); font-weight:700; }
+  .scard p{ color:var(--muted); font-size:15px; margin-top:12px; }
+  .scard ul{ list-style:none; margin-top:18px; display:grid; gap:9px; }
+  .scard li{ font-size:14px; color:#c3c8d1; display:flex; gap:10px; align-items:flex-start; }
+  .scard li svg{ width:16px; height:16px; color:var(--accent); flex:0 0 auto; margin-top:3px; }
+
+  /* ============================================================
+     WHY RG (diferenciadores)
+     ============================================================ */
+  .why-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--steel); border:1px solid var(--steel); border-radius:6px; overflow:hidden; }
+  .why{ background:var(--ink); padding:32px 28px; transition:background .25s var(--ease); }
+  .why:hover{ background:#131519; }
+  .why__ico{ width:34px; height:34px; color:var(--gold); margin-bottom:16px; }
+  .why__ico svg{ width:100%; height:100%; stroke-width:1.5; }
+  .why h3{ font-size:17px; color:#fff; font-weight:700; }
+  .why p{ font-size:14px; color:#9aa1ac; margin-top:8px; }
+
+  /* ============================================================
+     PROCESS (paper)
+     ============================================================ */
+  .proc{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px; position:relative; }
+  .pstep{ position:relative; padding-top:20px; }
+  .pstep__bar{ height:3px; background:var(--border); position:relative; margin-bottom:24px; overflow:hidden; border-radius:2px; }
+  .pstep__bar span{ position:absolute; inset:0; width:0; background:var(--accent); }
+  .pstep__n{ font-family:var(--font-mono); font-size:13px; color:var(--accent); font-weight:600; letter-spacing:.1em; }
+  .pstep h3{ font-size:22px; color:var(--fg); margin-top:8px; font-weight:700; }
+  .pstep p{ color:var(--muted); font-size:15px; margin-top:10px; }
+
+  /* ============================================================
+     QUOTE / CTA + FORM
+     ============================================================ */
+  .quote{ position:relative; overflow:hidden; }
+  .quote::before{
+    content:""; position:absolute; inset:0;
+    background-image:linear-gradient(rgba(201,162,78,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(201,162,78,.05) 1px,transparent 1px);
+    background-size:40px 40px; mask-image:radial-gradient(90% 90% at 50% 0%, #000, transparent 70%);
+  }
+  .quote .wrap{ position:relative; z-index:2; display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center; }
+  .quote h2{ font-size:clamp(30px,4vw,46px); font-weight:900; color:#fff; }
+  .quote h2 em{ font-style:normal; color:var(--gold); }
+  .quote__p{ color:#b6bcc6; margin-top:18px; font-size:17px; max-width:44ch; }
+  .contact-list{ margin-top:30px; display:grid; gap:14px; }
+  .contact-item{ display:flex; align-items:center; gap:14px; font-family:var(--font-mono); font-size:15px; color:#e6e8ec; }
+  .contact-item svg{ width:20px; height:20px; color:var(--gold); flex:0 0 auto; }
+  .contact-item span{ color:#7f858f; font-size:12px; letter-spacing:.08em; text-transform:uppercase; display:block; }
+
+  .qform{ background:var(--surface); border:1px solid var(--steel); border-radius:8px; padding:32px; box-shadow:0 40px 80px -40px rgba(0,0,0,.8); }
+  .qform h3{ font-size:20px; color:#fff; font-weight:700; }
+  .qform p.small{ font-size:13px; color:#868c96; margin-top:4px; }
+  .field{ margin-top:16px; }
+  .field label{ display:block; font-size:12px; font-family:var(--font-mono); letter-spacing:.08em; text-transform:uppercase; color:#9aa1ac; margin-bottom:7px; }
+  .field input, .field select, .field textarea{
+    width:100%; padding:12px 14px; border-radius:var(--radius);
+    background:#0f1116; border:1px solid var(--steel); color:#fff;
+    font-family:var(--font-display); font-size:15px; transition:border-color .2s;
+  }
+  .field textarea{ resize:vertical; min-height:88px; }
+  .field input::placeholder, .field textarea::placeholder{ color:#5a606b; }
+  .field input:focus, .field select:focus, .field textarea:focus{ outline:none; border-color:var(--gold); box-shadow:0 0 0 3px rgba(201,162,78,.15); }
+  .field-row{ display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  .qform .btn--primary{ width:100%; justify-content:center; margin-top:22px; }
+  .form-note{ font-size:12px; color:#6b7078; margin-top:14px; text-align:center; }
+
+  /* ============================================================
+     FOOTER
+     ============================================================ */
+  .footer{ background:#0a0b0e; border-top:1px solid var(--steel); }
+  .footer .wrap{ padding-block:56px 32px; }
+  .foot-top{ display:grid; grid-template-columns:1.5fr 1fr 1fr; gap:40px; padding-bottom:40px; border-bottom:1px solid var(--steel); }
+  .footer p.desc{ color:#868c96; font-size:14px; margin-top:16px; max-width:38ch; }
+  .foot-col h4{ font-family:var(--font-mono); font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:#6b7078; margin-bottom:16px; }
+  .foot-col a{ display:block; color:#b6bcc6; font-size:14px; margin-bottom:11px; transition:color .2s; }
+  .foot-col a:hover{ color:var(--gold); }
+  .foot-bottom{ padding-top:24px; display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; font-size:12.5px; color:#5f6672; font-family:var(--font-mono); }
+
+  /* ============================================================
+     FLOATING DOCK (animated)
+     ============================================================ */
+  .dock-shell{ position:fixed; left:50%; bottom:22px; transform:translateX(-50%); z-index:70; }
+  .dock{
+    display:flex; align-items:flex-end; gap:8px;
+    padding:9px 12px; border-radius:100px;
+    background:rgba(20,22,28,.82); backdrop-filter:blur(16px);
+    border:1px solid rgba(255,255,255,.1);
+    box-shadow:0 16px 44px -12px rgba(0,0,0,.7), 0 1px 0 rgba(255,255,255,.08) inset;
+  }
+  .dock-item{
+    --sz:46px;
+    width:var(--sz); height:var(--sz); border-radius:50%;
+    display:grid; place-items:center; position:relative;
+    background:#20232c; border:1px solid rgba(255,255,255,.08);
+    color:#d7dbe1; cursor:pointer;
+    transition:width .18s var(--ease), height .18s var(--ease), background .2s, color .2s;
+  }
+  .dock-item svg{ width:44%; height:44%; }
+  .dock-item:hover{ background:var(--gold); color:#14140E; }
+  .dock-item--cta{ background:var(--gold); color:#14140E; }
+  .dock-item--cta:hover{ background:var(--gold-bright); }
+  .dock-item__tip{
+    position:absolute; bottom:calc(100% + 12px); left:50%; transform:translateX(-50%) translateY(4px);
+    background:#0b0c0f; color:#fff; border:1px solid var(--steel);
+    font-family:var(--font-mono); font-size:11px; letter-spacing:.04em; white-space:nowrap;
+    padding:6px 10px; border-radius:5px; opacity:0; pointer-events:none; transition:opacity .18s, transform .18s;
+  }
+  .dock-item:hover .dock-item__tip{ opacity:1; transform:translateX(-50%) translateY(0); }
+  .dock-sep{ width:1px; height:30px; background:rgba(255,255,255,.12); margin-inline:2px; align-self:center; }
+
+  /* ============================================================
+     REVEAL ANIMATION
+     ============================================================ */
+  .reveal{ opacity:0; transform:translateY(26px); transition:opacity .7s var(--ease), transform .7s var(--ease); }
+  .reveal.in{ opacity:1; transform:none; }
+  .reveal.d1{ transition-delay:.08s; } .reveal.d2{ transition-delay:.16s; } .reveal.d3{ transition-delay:.24s; }
+  @keyframes fadeUp{ from{ opacity:0; transform:translateY(16px); } to{ opacity:1; transform:none; } }
+
+  @media (prefers-reduced-motion: reduce){
+    .shimmer{ animation:none; }
+    .marquee__track{ animation:none; }
+    .reveal{ opacity:1; transform:none; transition:none; }
+    .draw{ stroke-dasharray:none !important; }
+  }
+
+  /* ============================================================
+     RESPONSIVE
+     ============================================================ */
+  @media (max-width:960px){
+    .hero .wrap{ grid-template-columns:1fr; gap:40px; }
+    .blueprint{ order:-1; }
+    .quote .wrap{ grid-template-columns:1fr; gap:40px; }
+    .prod-grid, .prod-panel.active{ grid-template-columns:repeat(2,1fr); }
+    .serv-grid{ grid-template-columns:1fr; }
+    .why-grid{ grid-template-columns:repeat(2,1fr); }
+    .proc{ grid-template-columns:1fr; gap:14px; }
+    .foot-top{ grid-template-columns:1fr 1fr; }
+  }
+  @media (max-width:680px){
+    .band > .wrap{ padding-block:64px; }
+    .nav{ display:none; }
+    .header .btn--primary{ display:none; }
+    .menu-toggle{ display:grid; place-items:center; }
+    .hero__stats{ grid-template-columns:1fr 1fr; }
+    .stat{ border-right:none; border-bottom:1px solid var(--steel); padding:14px 0; }
+    .stat:nth-child(odd){ border-right:1px solid var(--steel); padding-right:16px; }
+    .prod-grid, .prod-panel.active{ grid-template-columns:1fr; }
+    .why-grid{ grid-template-columns:1fr; }
+    .foot-top{ grid-template-columns:1fr; }
+    .field-row{ grid-template-columns:1fr; }
+    .dock-item{ --sz:42px; }
+    .dock-item__tip{ display:none; }
+  }
+
+  /* Mobile menu */
+  .mnav{ position:fixed; inset:0; z-index:65; background:rgba(10,11,14,.97); backdrop-filter:blur(8px); display:none; flex-direction:column; padding:96px 32px 32px; }
+  .mnav.open{ display:flex; }
+  .mnav a{ font-size:26px; font-weight:800; color:#fff; padding:16px 0; border-bottom:1px solid var(--steel); }
+  .mnav .btn{ margin-top:24px; justify-content:center; }
+  .mnav__close{ position:absolute; top:20px; right:24px; background:none; border:1px solid var(--steel); color:#fff; width:44px; height:44px; border-radius:8px; cursor:pointer; font-size:20px; }
+
+  /* ============================================================
+     3D MODEL VIEWER
+     ============================================================ */
+  .model3d{ background:#0b0c0f; position:relative; overflow:hidden; }
+  .model3d .wrap{ display:grid; grid-template-columns:1fr 1.05fr; gap:52px; align-items:center; }
+  .m3d-stage{ position:relative; width:100%; aspect-ratio:1/1; max-height:560px;
+    border:1px solid var(--steel); border-radius:12px;
+    background:radial-gradient(120% 100% at 50% 30%, rgba(201,162,78,.10), transparent 60%), #0e1015;
+    overflow:hidden; touch-action:none; cursor:grab; box-shadow:0 40px 80px -40px rgba(0,0,0,.7); }
+  .m3d-stage:active{ cursor:grabbing; }
+  .m3d-stage canvas{ display:block; width:100%; height:100%; }
+  .m3d-hint{ position:absolute; left:16px; bottom:14px; font-family:var(--font-mono); font-size:11px; letter-spacing:.06em; color:#7d828c; z-index:3; }
+  .m3d-hint b{ color:var(--gold); }
+  .m3d-tag{ position:absolute; top:14px; left:16px; font-family:var(--font-mono); font-size:10.5px; letter-spacing:.16em; text-transform:uppercase; color:#8098b2; z-index:3; }
+  .m3d-hot{ position:absolute; transform:translate(-50%,-50%); z-index:4; pointer-events:none; }
+  .m3d-hot i{ display:block; width:10px; height:10px; border-radius:50%; background:var(--gold); box-shadow:0 0 0 4px rgba(201,162,78,.22); }
+  .m3d-hot span{ position:absolute; left:15px; top:-8px; white-space:nowrap; font-family:var(--font-mono); font-size:10.5px; color:#e6e8ec; background:rgba(11,12,15,.82); border:1px solid var(--steel); padding:3px 8px; border-radius:4px; }
+  .m3d-fallback{ position:absolute; inset:0; display:none; place-items:center; text-align:center; padding:30px; color:#9aa1ac; font-size:14px; z-index:5; }
+  .m3d-fallback.show{ display:grid; }
+  .m3d-finish{ display:flex; gap:8px; margin-top:24px; flex-wrap:wrap; }
+  .fbtn{ font-family:var(--font-mono); font-size:12px; letter-spacing:.08em; text-transform:uppercase; padding:9px 15px; border:1px solid var(--steel); background:transparent; color:#c7ccd4; border-radius:100px; cursor:pointer; transition:all .2s var(--ease); }
+  .fbtn[aria-pressed="true"]{ background:var(--gold); color:#14140E; border-color:var(--gold); }
+  .fbtn:hover:not([aria-pressed="true"]){ border-color:var(--gold); color:#fff; }
+
+  /* ============================================================
+     MISSION / VISION
+     ============================================================ */
+  .mv-grid{ display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+  .mv{ border:1px solid var(--border); border-radius:6px; padding:36px 32px; background:var(--card); position:relative; overflow:hidden; transition:transform .25s var(--ease), border-color .25s; }
+  .mv:hover{ transform:translateY(-4px); border-color:var(--accent); }
+  .mv::before{ content:""; position:absolute; top:0; left:0; width:100%; height:3px; background:var(--accent); transform:scaleX(0); transform-origin:left; transition:transform .35s var(--ease); }
+  .mv:hover::before{ transform:scaleX(1); }
+  .mv__k{ font-family:var(--font-mono); font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--accent); }
+  .mv h3{ font-size:25px; color:var(--fg); margin-top:12px; font-weight:800; line-height:1.1; }
+  .mv p{ color:var(--muted); font-size:16px; margin-top:14px; }
+  .values{ margin-top:34px; display:flex; flex-wrap:wrap; gap:10px; justify-content:center; }
+  .values .chip{ font-size:12px; padding:9px 15px; }
+
+  /* ============================================================
+     REVIEWS
+     ============================================================ */
+  .rev-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+  .rcard{ border:1px solid var(--border); border-radius:6px; padding:28px; background:var(--card); transition:transform .25s var(--ease), border-color .25s; }
+  .rcard:hover{ transform:translateY(-4px); border-color:var(--border-str); }
+  .stars{ display:flex; gap:3px; color:var(--accent); margin-bottom:16px; }
+  .stars svg{ width:16px; height:16px; }
+  .stars .off{ color:var(--border-str); }
+  .rcard blockquote{ color:var(--fg); font-size:15.5px; line-height:1.62; }
+  .rcard__who{ margin-top:22px; display:flex; align-items:center; gap:12px; }
+  .rcard__av{ width:42px; height:42px; border-radius:50%; background:linear-gradient(145deg,var(--gold-bright),#9a7a34); color:#14140E; display:grid; place-items:center; font-weight:800; font-family:var(--font-display); font-size:15px; flex:0 0 auto; }
+  .rcard__n{ font-weight:700; font-size:14px; color:var(--fg); }
+  .rcard__r{ font-size:12px; color:var(--muted); font-family:var(--font-mono); margin-top:1px; }
+
+  /* ============================================================
+     VIDEOS
+     ============================================================ */
+  .vid-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+  .vcard{ display:block; border:1px solid var(--steel); border-radius:8px; overflow:hidden; background:var(--surface); transition:transform .25s var(--ease), border-color .25s; }
+  .vcard:hover{ transform:translateY(-5px); border-color:var(--gold); }
+  .vthumb{ position:relative; aspect-ratio:16/9; background:linear-gradient(135deg,#1c1f27,#0e1015); display:grid; place-items:center; overflow:hidden; }
+  .vthumb::after{ content:""; position:absolute; inset:0; background:radial-gradient(circle at 50% 45%, rgba(201,162,78,.16), transparent 62%); }
+  .vthumb svg.bg{ position:absolute; width:60%; height:60%; color:#2a2f3a; z-index:1; }
+  .vplay{ position:relative; z-index:2; width:56px; height:56px; border-radius:50%; background:var(--gold); color:#14140E; display:grid; place-items:center; box-shadow:0 8px 24px rgba(0,0,0,.45); transition:transform .2s var(--ease); }
+  .vcard:hover .vplay{ transform:scale(1.09); }
+  .vplay svg{ width:22px; height:22px; margin-left:3px; }
+  .vdur{ position:absolute; right:10px; bottom:10px; z-index:2; font-family:var(--font-mono); font-size:11px; background:rgba(0,0,0,.62); color:#fff; padding:2px 7px; border-radius:3px; }
+  .vmeta{ padding:18px 20px 22px; }
+  .vmeta h3{ font-size:16px; color:#fff; font-weight:700; line-height:1.3; }
+  .vmeta p{ font-size:13px; color:#9aa1ac; margin-top:7px; }
+
+  /* ============================================================
+     CLIENTS / SUPPLIERS
+     ============================================================ */
+  .cli-split{ display:grid; grid-template-columns:1fr 1fr; gap:22px; }
+  .cli-col h4{ font-family:var(--font-mono); font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--gold); margin-bottom:18px; display:flex; align-items:center; gap:10px; }
+  .cli-col h4::before{ content:""; width:22px; height:1px; background:var(--gold); }
+  .logo-wall{ display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+  .logo{ border:1px solid var(--steel); border-radius:6px; padding:18px 12px; display:grid; place-items:center; text-align:center; background:#0e1015; min-height:78px;
+    font-family:var(--font-display); font-weight:800; font-size:13.5px; letter-spacing:.01em; color:#aeb4be; transition:color .2s, border-color .2s, transform .2s; }
+  .logo span{ display:block; font-family:var(--font-mono); font-weight:400; font-size:9.5px; letter-spacing:.1em; color:#5f6672; margin-top:5px; text-transform:uppercase; }
+  .logo:hover{ color:#fff; border-color:var(--gold); transform:translateY(-3px); }
+
+  @media (max-width:960px){
+    .model3d .wrap{ grid-template-columns:1fr; gap:36px; }
+    .rev-grid{ grid-template-columns:repeat(2,1fr); }
+    .vid-grid{ grid-template-columns:repeat(2,1fr); }
+    .mv-grid{ grid-template-columns:1fr; }
+    .cli-split{ grid-template-columns:1fr; }
+  }
+  @media (max-width:680px){
+    .rev-grid{ grid-template-columns:1fr; }
+    .vid-grid{ grid-template-columns:1fr; }
+    .logo-wall{ grid-template-columns:repeat(2,1fr); }
+  }
+
+  /* ============================================================
+     HEADER 2 — top utility bar + dropdown
+     ============================================================ */
+  .topbar{ background:#08090c; border-bottom:1px solid var(--steel); overflow:hidden; transition:max-height .35s var(--ease), opacity .3s var(--ease); max-height:44px; }
+  .header.scrolled .topbar{ max-height:0; opacity:0; border-bottom-color:transparent; }
+  .header .topbar .wrap{ display:flex; align-items:center; justify-content:space-between; padding-block:9px; gap:16px; }
+  .topbar__l{ display:flex; gap:24px; flex-wrap:wrap; font-family:var(--font-mono); font-size:11.5px; letter-spacing:.04em; }
+  .topbar__l a, .topbar__l span{ display:inline-flex; align-items:center; gap:7px; color:#9aa1ac; transition:color .2s; }
+  .topbar__l a:hover{ color:var(--gold); }
+  .topbar__l svg{ width:13px; height:13px; color:var(--gold); }
+  .topbar__r{ font-family:var(--font-mono); font-size:11.5px; letter-spacing:.06em; color:#9aa1ac; white-space:nowrap; }
+  .topbar__r a{ color:var(--gold); transition:opacity .2s; }
+  .topbar__r a:hover{ text-decoration:underline; }
+  .headmain{ transition:background .3s var(--ease), border-color .3s var(--ease); border-bottom:1px solid transparent; }
+  .header.scrolled .headmain{ background:rgba(14,15,18,.9); backdrop-filter:blur(12px); border-bottom-color:var(--steel); }
+  .headmain .wrap{ display:flex; align-items:center; justify-content:space-between; padding-block:15px; }
+  .nav__item{ position:relative; }
+  .nav__item > a{ display:inline-flex; align-items:center; gap:5px; }
+  .nav__item > a svg{ width:13px; height:13px; transition:transform .2s; }
+  .nav__item:hover > a svg{ transform:rotate(180deg); }
+  .dropdown{ position:absolute; top:calc(100% + 14px); left:50%; transform:translateX(-50%) translateY(8px); width:300px;
+    background:rgba(16,18,22,.97); backdrop-filter:blur(14px); border:1px solid var(--steel); border-radius:10px; padding:10px;
+    opacity:0; visibility:hidden; transition:opacity .22s var(--ease), transform .22s var(--ease); box-shadow:0 30px 60px -24px rgba(0,0,0,.7); z-index:80; }
+  .nav__item:hover .dropdown{ opacity:1; visibility:visible; transform:translateX(-50%) translateY(0); }
+  .dropdown::before{ content:""; position:absolute; top:-14px; left:0; right:0; height:14px; }
+  .drop-link{ display:flex; align-items:center; gap:13px; padding:11px 12px; border-radius:7px; transition:background .18s; }
+  .drop-link:hover{ background:#1e212a; }
+  .drop-link svg{ width:20px; height:20px; color:var(--gold); flex:0 0 auto; }
+  .drop-link b{ display:block; font-size:14px; color:#fff; font-weight:600; }
+  .drop-link span{ display:block; font-size:12px; color:#868c96; font-family:var(--font-mono); margin-top:1px; }
+
+  /* ============================================================
+     PRODUCT / SERVICE CARDS with photos (overrides)
+     ============================================================ */
+  .pcard{ overflow:hidden; }
+  .pcard::after{ display:none; }
+  .pcard__img{ margin:-24px -24px 20px; aspect-ratio:16/10; background:var(--card-2); overflow:hidden; position:relative; }
+  .pcard__img img{ width:100%; height:100%; object-fit:cover; transition:transform .5s var(--ease); }
+  .pcard:hover .pcard__img img{ transform:scale(1.06); }
+  .pcard__img::after{ content:""; position:absolute; inset:0; background:linear-gradient(180deg, transparent 58%, rgba(10,11,14,.30)); }
+  .band--paper .pcard__img::after{ background:linear-gradient(180deg, transparent 62%, rgba(20,22,26,.10)); }
+  .pcard h3{ font-size:19px; }
+
+  .scard{ overflow:hidden; }
+  .scard__img{ margin:-32px -28px 24px; aspect-ratio:16/9; overflow:hidden; background:#0e1015; position:relative; }
+  .scard__img img{ width:100%; height:100%; object-fit:cover; transition:transform .5s var(--ease); }
+  .scard:hover .scard__img img{ transform:scale(1.05); }
+  .scard__img::after{ content:""; position:absolute; inset:0; background:linear-gradient(180deg, rgba(10,11,14,.05), rgba(10,11,14,.5)); }
+
+  /* ============================================================
+     PRICING / PLANES
+     ============================================================ */
+  .price-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:18px; align-items:stretch; }
+  .plan{ border:1px solid var(--border); border-radius:10px; padding:34px 30px; background:var(--card); display:flex; flex-direction:column; position:relative; transition:transform .25s var(--ease), border-color .25s; }
+  .plan:hover{ transform:translateY(-5px); border-color:var(--border-str); }
+  .plan--feat{ border-color:var(--gold); background:linear-gradient(180deg, rgba(201,162,78,.07), var(--card)); box-shadow:0 30px 70px -34px rgba(201,162,78,.35); }
+  .plan__badge{ position:absolute; top:-12px; left:50%; transform:translateX(-50%); background:var(--gold); color:#14140E; font-family:var(--font-mono); font-size:11px; font-weight:600; letter-spacing:.1em; text-transform:uppercase; padding:5px 14px; border-radius:100px; white-space:nowrap; }
+  .plan__k{ font-family:var(--font-mono); font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:var(--accent); }
+  .plan__name{ font-size:24px; font-weight:800; color:var(--fg); margin-top:10px; }
+  .plan__price{ margin-top:16px; display:flex; align-items:baseline; gap:8px; }
+  .plan__price b{ font-family:var(--font-display); font-size:38px; font-weight:800; color:var(--fg); letter-spacing:-.02em; }
+  .plan__price span{ font-size:13px; color:var(--muted); font-family:var(--font-mono); }
+  .plan__desc{ color:var(--muted); font-size:14px; margin-top:12px; min-height:40px; }
+  .plan ul{ list-style:none; margin-top:22px; display:grid; gap:12px; flex:1; }
+  .plan li{ font-size:14px; color:var(--fg); display:flex; gap:11px; align-items:flex-start; }
+  .plan li svg{ width:17px; height:17px; color:var(--gold); flex:0 0 auto; margin-top:2px; }
+  .plan .btn{ margin-top:26px; width:100%; justify-content:center; }
+  .price-note{ text-align:center; margin-top:28px; font-size:13px; color:var(--muted); font-family:var(--font-mono); }
+
+  /* ============================================================
+     MOTION FOOTER
+     ============================================================ */
+  .mfooter{ background:#08090c; border-top:1px solid var(--steel); position:relative; overflow:hidden; }
+  .mfooter__cta{ text-align:center; padding:76px 24px 60px; border-bottom:1px solid var(--steel); position:relative; z-index:2; }
+  .mfooter__cta h2{ font-size:clamp(28px,4vw,46px); font-weight:900; color:#fff; letter-spacing:-.02em; }
+  .mfooter__cta h2 em{ font-style:normal; color:var(--gold); }
+  .mfooter__cta p{ color:#9aa1ac; margin-top:14px; font-size:16px; }
+  .mfooter__cta .btn{ margin-top:26px; }
+  .mfooter__word{ position:relative; z-index:2; padding:44px 0 128px; text-align:center; line-height:.9; }
+  .mfooter__word span{ display:inline-block; font-family:var(--font-display); font-weight:900; font-size:clamp(48px,14vw,180px); letter-spacing:-.03em;
+    background:linear-gradient(180deg, #2a2e38, #101216); -webkit-background-clip:text; background-clip:text; color:transparent; transition:background .4s; user-select:none; }
+  .mfooter__word:hover span{ background:linear-gradient(180deg, var(--gold-bright), var(--gold)); -webkit-background-clip:text; background-clip:text; }
+  .mfooter__cols{ position:relative; z-index:2; display:grid; grid-template-columns:1.6fr 1fr 1fr 1fr; gap:36px; padding:40px 0; }
+  .mfooter__cols .desc{ color:#868c96; font-size:14px; margin-top:16px; max-width:34ch; }
+  .mfcol h4{ font-family:var(--font-mono); font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:#6b7078; margin-bottom:16px; }
+  .mfcol a{ display:block; color:#b6bcc6; font-size:14px; margin-bottom:11px; transition:color .2s, transform .2s; }
+  .mfcol a:hover{ color:var(--gold); transform:translateX(4px); }
+  .mfoot-bottom{ position:relative; z-index:2; padding:24px 0 40px; display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; font-size:12.5px; color:#5f6672; font-family:var(--font-mono); border-top:1px solid var(--steel); }
+
+  /* ============================================================
+     AI CHAT ASSISTANT
+     ============================================================ */
+  .chat-fab{ position:fixed; right:20px; bottom:24px; z-index:72; width:56px; height:56px; border-radius:50%;
+    background:var(--gold); color:#14140E; border:none; cursor:pointer; display:grid; place-items:center;
+    box-shadow:0 14px 34px -8px rgba(201,162,78,.6); transition:transform .2s var(--ease); }
+  .chat-fab:hover{ transform:scale(1.08); }
+  .chat-fab svg{ width:26px; height:26px; }
+  .chat-fab__dot{ position:absolute; top:2px; right:2px; width:14px; height:14px; border-radius:50%; background:#3ecf7e; border:2px solid #14140E; }
+  .chat-panel{ position:fixed; right:20px; bottom:90px; z-index:73; width:370px; max-width:calc(100vw - 32px); height:600px; max-height:calc(100vh - 120px);
+    background:var(--surface); border:1px solid var(--steel); border-radius:16px; display:flex; flex-direction:column; overflow:hidden;
+    box-shadow:0 30px 70px -20px rgba(0,0,0,.75); opacity:0; visibility:hidden; transform:translateY(16px) scale(.98); transform-origin:bottom right;
+    transition:opacity .24s var(--ease), transform .24s var(--ease), visibility .24s; }
+  .chat-panel.open{ opacity:1; visibility:visible; transform:translateY(0) scale(1); }
+  .chat-head{ display:flex; align-items:center; gap:12px; padding:16px 18px; border-bottom:1px solid var(--steel); background:linear-gradient(180deg,#1e212a,#16181d); }
+  .chat-head__av{ width:38px; height:38px; border-radius:50%; background:linear-gradient(145deg,var(--gold-bright),#9a7a34); color:#14140E; display:grid; place-items:center; font-weight:800; }
+  .chat-head__t b{ display:block; font-size:14.5px; color:#fff; font-weight:700; }
+  .chat-head__t span{ display:flex; align-items:center; gap:6px; font-size:11.5px; color:#8f96a0; font-family:var(--font-mono); }
+  .chat-head__t span::before{ content:""; width:7px; height:7px; border-radius:50%; background:#3ecf7e; }
+  .chat-head__x{ margin-left:auto; background:none; border:none; color:#9aa1ac; cursor:pointer; width:32px; height:32px; border-radius:6px; display:grid; place-items:center; }
+  .chat-head__x:hover{ background:#242833; color:#fff; }
+  .chat-body{ flex:1; min-height:0; overflow-y:auto; padding:18px; display:flex; flex-direction:column; gap:12px; }
+  .msg{ max-width:82%; padding:11px 14px; border-radius:14px; font-size:14px; line-height:1.5; }
+  .msg--bot{ background:#242833; color:#e6e8ec; border-bottom-left-radius:4px; align-self:flex-start; }
+  .msg--user{ background:var(--gold); color:#14140E; border-bottom-right-radius:4px; align-self:flex-end; font-weight:500; }
+  .msg a{ color:var(--gold); text-decoration:underline; }
+  .msg--user a{ color:#14140E; }
+  .chat-quick{ display:flex; flex-wrap:wrap; gap:8px; padding:12px 16px; border-top:1px solid var(--steel); background:#12141a; max-height:148px; overflow-y:auto; flex:0 0 auto; }
+  .qr{ font-size:12.5px; font-family:var(--font-mono); padding:8px 13px; border:1px solid var(--steel); border-radius:100px; background:transparent; color:#c7ccd4; cursor:pointer; transition:all .18s; }
+  .qr:hover{ border-color:var(--gold); color:var(--gold); }
+  @media (max-width:680px){
+    .price-grid{ grid-template-columns:1fr; }
+    .mfooter__cols{ grid-template-columns:1fr 1fr; }
+    .chat-fab{ bottom:90px; right:16px; }
+    .chat-panel{ bottom:90px; right:16px; height:440px; }
+    .topbar__l a:nth-child(2){ display:none; }
+    .header .topbar .wrap{ justify-content:center; }
+  }
+  @media (max-width:960px){
+    .price-grid{ grid-template-columns:1fr; max-width:460px; margin-inline:auto; }
+    .mfooter__cols{ grid-template-columns:1fr 1fr; }
+    .topbar__l span:nth-child(n+3){ display:none; }
+    .topbar__r{ display:none; }
+    .nav{ display:none; }
+    .header .btn--primary{ display:none; }
+    .menu-toggle{ display:grid; place-items:center; }
+  }
+
+  /* ---- 3D section real photo banner ---- */
+  .m3d-photo{ grid-column:1 / -1; margin-top:40px; border:1px solid var(--steel); border-radius:12px; overflow:hidden; position:relative; }
+  .m3d-photo img{ width:100%; height:100%; max-height:440px; object-fit:cover; display:block; }
+  .m3d-photo__cap{ position:absolute; left:0; bottom:0; width:100%; padding:16px 20px; font-family:var(--font-mono); font-size:12.5px; letter-spacing:.03em; color:#d7dbe1; background:linear-gradient(transparent, rgba(8,9,12,.9)); }
+  .m3d-photo__cap b{ color:var(--gold); }
+
+  /* ---- product card "ver ficha" ---- */
+  .pcard{ cursor:pointer; }
+  .pcard__more{ margin-top:16px; display:flex; align-items:center; gap:7px; font-family:var(--font-mono); font-size:12px; letter-spacing:.06em; text-transform:uppercase; color:var(--accent); transition:gap .2s var(--ease); }
+  .pcard__more svg{ width:15px; height:15px; transition:transform .2s var(--ease); }
+  .pcard:hover .pcard__more{ gap:11px; }
+  .pcard:hover .pcard__more svg{ transform:translateX(3px); }
+
+  /* ---- form: whatsapp alt + success ---- */
+  .qform__wa{ display:block; text-align:center; margin-top:12px; font-family:var(--font-mono); font-size:12.5px; color:#9aa1ac; transition:color .2s; }
+  .qform__wa:hover{ color:var(--gold); }
+  .form-ok{ margin-top:16px; padding:14px 16px; border:1px solid rgba(62,207,126,.4); background:rgba(62,207,126,.08); border-radius:6px; color:#8ff0b6; font-size:14px; display:flex; align-items:center; gap:10px; }
+  .form-ok svg{ width:18px; height:18px; flex:0 0 auto; }
+  .btn.is-loading{ opacity:.7; pointer-events:none; }
+
+  /* ---- Client / supplier logo marquees ---- */
+  .logo-row{ margin-top:40px; }
+  .logo-row__label{ margin-bottom:16px; }
+  .logo-row__label span{ font-family:var(--font-mono); font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--gold); display:inline-flex; align-items:center; gap:10px; }
+  .logo-row__label span::before{ content:""; width:22px; height:1px; background:var(--gold); }
+  .logo-marquee{ overflow:hidden; position:relative; border-block:1px solid var(--steel); background:#0b0c0f;
+    -webkit-mask-image:linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
+    mask-image:linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent); }
+  .logo-track{ display:flex; align-items:center; width:max-content; animation:marq 46s linear infinite; }
+  .logo-track[data-dir="right"]{ animation-direction:reverse; }
+  .logo-marquee:hover .logo-track{ animation-play-state:paused; }
+  .logo-item{ display:flex; align-items:center; gap:13px; padding:24px 42px; color:#9aa1ac; transition:color .25s var(--ease); white-space:nowrap; }
+  .logo-item:hover{ color:#fff; }
+  .logo-item svg{ width:26px; height:26px; color:var(--gold); flex:0 0 auto; opacity:.9; }
+  .logo-item b{ font-family:var(--font-display); font-weight:800; font-size:19px; letter-spacing:-.01em; }
+  .logo-item i{ font-style:normal; font-family:var(--font-mono); font-size:10px; letter-spacing:.12em; text-transform:uppercase; color:#5f6672; margin-left:2px; }
+  @media (prefers-reduced-motion: reduce){ .logo-track{ animation:none; } }
+  /* Tighter spacing for the clients/suppliers section */
+  #clientes > .wrap{ padding-bottom:6px; }
+  #clientes .sec-head{ margin-bottom:0; }
+  #clientes .logo-row{ margin-top:30px; }
+  #clientes{ padding-bottom:60px; }
+
+  /* ---- Reviews slider ---- */
+  .rev-slider{ position:relative; max-width:760px; margin:0 auto; }
+  .rev-viewport{ overflow:hidden; }
+  .rev-track{ display:flex; transition:transform .5s var(--ease); }
+  .rev-slide{ min-width:100%; padding:6px; }
+  .rev-quote{ border:1px solid var(--border); border-radius:12px; padding:44px 42px; background:var(--card); text-align:center; }
+  .rev-quote .stars{ justify-content:center; margin-bottom:20px; }
+  .rev-quote blockquote{ font-family:var(--font-display); font-size:clamp(18px,2.3vw,24px); line-height:1.5; color:var(--fg); font-weight:500; }
+  .rev-quote .rcard__who{ justify-content:center; margin-top:26px; }
+  .rev-nav{ display:flex; align-items:center; justify-content:center; gap:22px; margin-top:28px; }
+  .rev-arrow{ width:44px; height:44px; border-radius:50%; border:1px solid var(--border-str); background:transparent; color:var(--fg); display:grid; place-items:center; cursor:pointer; transition:border-color .2s, color .2s, transform .2s; }
+  .rev-arrow:hover{ border-color:var(--gold); color:var(--gold); transform:translateY(-2px); }
+  .rev-arrow svg{ width:18px; height:18px; }
+  .rev-dots{ display:flex; gap:8px; }
+  .rev-dot{ width:8px; height:8px; border-radius:50%; background:var(--border-str); border:none; cursor:pointer; padding:0; transition:background .2s, width .2s; }
+  .rev-dot.active{ background:var(--gold); width:22px; border-radius:4px; }
+</style>
+
+<!-- ► Datos estructurados · SUPUESTO: ajusta dirección exacta y horario reales -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HardwareStore",
+  "name": "Fijaciones RG",
+  "description": "Tornería y fijaciones. Abrazaderas, anclajes, hilos y cortes a pedido con stock inmediato, despacho propio y factura desde el primer pedido.",
+  "image": "https://fijacionesrg.cl/og-fijaciones-rg.jpg",
+  "url": "https://fijacionesrg.cl/",
+  "email": "fijaciones.rg@gmail.com",
+  "telephone": "+56920488227",
+  "priceRange": "$$",
+  "areaServed": "Santiago, Región Metropolitana, Chile",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Independencia",
+    "addressRegion": "Región Metropolitana",
+    "addressCountry": "CL"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "10:00",
+    "closes": "17:00"
+  }],
+  "makesOffer": [
+    { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Abrazaderas industriales" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Anclajes para hormigón" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Hilos y cortes a medida" } }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- ============================ HEADER ============================ -->
+<header class="header" id="header">
+  <div class="topbar">
+    <div class="wrap">
+      <div class="topbar__l">
+        <a href="https://wa.me/56920488227" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5c0 8 7 15 15 15l2.5-3-4-2.5-2 1.5c-2.5-1.2-4.3-3-5.5-5.5l1.5-2L9.5 2.5 6.5 2C5 3 4 3.8 4 5z"/></svg>+56 9 2048 8227</a>
+        <a href="mailto:fijaciones.rg@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>fijaciones.rg@gmail.com</a>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Despacho 24–48h</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.7-7-11a7 7 0 0 1 14 0c0 5.3-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Independencia · Santiago</span>
+      </div>
+      <div class="topbar__r"><a href="sobre-nosotros.html">Conócenos</a> · Factura desde el 1er pedido</div>
+    </div>
+  </div>
+  <div class="headmain">
+    <div class="wrap">
+      <a class="brand" href="#top" aria-label="Fijaciones RG, inicio">
+        <span class="brand__mark" aria-hidden="true">
+          <!-- socket-cap bolt-head mark -->
+          <svg viewBox="0 0 32 32" fill="none">
+            <path d="M16 2.6 27 9 V23 L16 29.4 5 23 V9 Z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+            <path d="M16 9.4 22.4 13 V19.8 L16 23.4 9.6 19.8 V13 Z" fill="currentColor"/>
+            <circle cx="16" cy="16.4" r="1.7" fill="#14140E"/>
+          </svg>
+        </span>
+        <span>
+          <span class="brand__name">Fijaciones <b>RG</b></span>
+          <span class="brand__tag">Tornería · Fijaciones</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Principal">
+        <div class="nav__item">
+          <a href="#productos">Productos <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></a>
+          <div class="dropdown">
+            <a class="drop-link" href="categorias/abrazaderas.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 20V9a6 6 0 0 1 12 0v11"/><path d="M4 20h4M16 20h4"/></svg><span style="display:block"><b>Abrazaderas</b><span>U, Omega, sinfín y más</span></span></a>
+            <a class="drop-link" href="categorias/anclajes.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v14"/><path d="M8 17c0 2 1.8 4 4 4s4-2 4-4"/><path d="M9 7l3-3 3 3"/></svg><span style="display:block"><b>Anclajes</b><span>Expansión, químico, tarugos</span></span></a>
+            <a class="drop-link" href="#servicios"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M12 4v3M12 17v3M4 12h3M17 12h3"/></svg><span style="display:block"><b>Hilos y cortes</b><span>Roscado y corte a medida</span></span></a>
+            <a class="drop-link" href="#servicios"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 7v10M20 7v10M4 17h16M9 7v10M15 7v10"/></svg><span style="display:block"><b>Fabricación especial</b><span>Contra plano o muestra</span></span></a>
+          </div>
+        </div>
+        <a href="#servicios">Servicios</a>
+        <a href="planes.html">Planes</a>
+        <a href="#clientes">Clientes</a>
+        <a href="#resenas">Reseñas</a>
+        <a href="blog.html">Blog</a>
+      </nav>
+
+      <a href="#cotizar" class="btn btn--primary">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h10M4 18h7"/></svg>
+        Cotizar
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- mobile nav -->
+<div class="mnav" id="mnav">
+  <button class="mnav__close" id="mnavClose" aria-label="Cerrar menú">✕</button>
+  <a href="#productos">Productos</a>
+  <a href="#servicios">Servicios</a>
+  <a href="planes.html">Planes</a>
+  <a href="#clientes">Clientes</a>
+  <a href="#resenas">Reseñas</a>
+  <a href="blog.html">Blog</a>
+  <a href="sobre-nosotros.html">Conócenos</a>
+  <a href="#cotizar" class="btn btn--primary">Cotizar ahora</a>
+</div>
+
+<span id="top"></span>
+
+<!-- ============================ HERO ============================ -->
+<section class="band hero">
+  <div class="wrap">
+    <div class="hero__copy">
+      <span class="eyebrow hero__eyebrow">Tornería · Fijaciones · Fabricación a pedido</span>
+      <h1>
+        Abrazaderas y anclajes<br>
+        <span class="shimmer">que sujetan de verdad.</span>
+      </h1>
+      <p class="hero__sub">
+        Fabricamos, cortamos y roscamos a pedido. Stock inmediato, despacho con camión propio
+        y factura desde el primer perno — entrega en 24 a 48 horas en Santiago.
+      </p>
+      <div class="hero__cta">
+        <a href="#cotizar" class="btn btn--primary">
+          Pedir cotización
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="#productos" class="btn btn--ghost">Ver línea de productos</a>
+      </div>
+
+      <div class="hero__stats">
+        <div class="stat"><div class="stat__n">24–48h</div><div class="stat__l">Entrega en Santiago</div></div>
+        <div class="stat"><div class="stat__n">$0</div><div class="stat__l">Sin compra mínima</div></div>
+        <div class="stat"><div class="stat__n">8.8·10.9</div><div class="stat__l">Grados A2 / A4 disponibles</div></div>
+        <div class="stat"><div class="stat__n">100%</div><div class="stat__l">Factura desde el pedido 1</div></div>
+      </div>
+    </div>
+
+    <!-- Blueprint visual (signature) -->
+    <div class="blueprint" aria-hidden="true">
+      <span class="blueprint__tag">FRG-ABZ-U · PLANO TÉCNICO</span>
+      <span class="blueprint__rev">REV. 02</span>
+      <svg class="bp-svg" viewBox="0 0 420 360" role="img">
+        <!-- faint grid -->
+        <defs>
+          <pattern id="bpgrid" width="20" height="20" patternUnits="userSpaceOnUse">
+            <path d="M20 0H0V20" fill="none" stroke="rgba(128,152,178,.10)" stroke-width="1"/>
+          </pattern>
+        </defs>
+        <rect x="0" y="26" width="420" height="310" fill="url(#bpgrid)"/>
+
+        <!-- U-bolt abrazadera -->
+        <g transform="translate(210,180)">
+          <!-- U shape body -->
+          <path class="bp-steel draw" d="M-70,90 L-70,-20 A70,70 0 0 1 70,-20 L70,90"
+                fill="none" stroke="#6b7280" stroke-width="16" stroke-linecap="round"/>
+          <!-- thread hatching left leg -->
+          <g class="bp-thread">
+            <line x1="-79" y1="52" x2="-61" y2="60"/><line x1="-79" y1="60" x2="-61" y2="68"/>
+            <line x1="-79" y1="68" x2="-61" y2="76"/><line x1="-79" y1="76" x2="-61" y2="84"/>
+          </g>
+          <g class="bp-thread">
+            <line x1="61" y1="60" x2="79" y2="52"/><line x1="61" y1="68" x2="79" y2="60"/>
+            <line x1="61" y1="76" x2="79" y2="68"/><line x1="61" y1="84" x2="79" y2="76"/>
+          </g>
+          <!-- base plate -->
+          <rect class="bp-steel-2 draw" x="-96" y="86" width="192" height="16" rx="2"/>
+          <!-- nuts -->
+          <path class="bp-steel draw" d="M-84,104 h28 l8,12 -8,12 h-28 l-8,-12z"/>
+          <path class="bp-steel draw" d="M56,104 h28 l8,12 -8,12 h-28 l-8,-12z"/>
+        </g>
+
+        <!-- Ø diameter cota (top) -->
+        <g>
+          <line class="bp-cota draw" x1="140" y1="70" x2="280" y2="70"/>
+          <path class="bp-cota" d="M140,70 l7,-4 v8z"/><path class="bp-cota" d="M280,70 l-7,-4 v8z"/>
+          <line class="bp-cota" x1="140" y1="62" x2="140" y2="92"/>
+          <line class="bp-cota" x1="280" y1="62" x2="280" y2="92"/>
+          <text class="bp-label" x="210" y="62" text-anchor="middle">Ø 3/8"–5/8"</text>
+        </g>
+
+        <!-- height cota (right) -->
+        <g>
+          <line class="bp-cota draw" x1="330" y1="160" x2="330" y2="292"/>
+          <path class="bp-cota" d="M330,160 l-4,7 h8z"/><path class="bp-cota" d="M330,292 l-4,-7 h8z"/>
+          <text class="bp-dim" x="338" y="230" transform="rotate(90 338 230)" text-anchor="middle">L a medida</text>
+        </g>
+
+        <!-- callout labels -->
+        <g>
+          <line class="bp-cota" x1="110" y1="250" x2="150" y2="250"/>
+          <circle cx="150" cy="250" r="2.5" fill="#C9A24E"/>
+          <text class="bp-dim" x="106" y="253" text-anchor="end">Acero zincado</text>
+        </g>
+        <g>
+          <line class="bp-cota" x1="310" y1="120" x2="270" y2="150"/>
+          <circle cx="270" cy="150" r="2.5" fill="#C9A24E"/>
+          <text class="bp-dim" x="314" y="118" text-anchor="start">Rosca métrica</text>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ MARQUEE ============================ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track" id="marqTrack">
+    <!-- filled by JS (duplicated for seamless loop) -->
+  </div>
+</div>
+
+<!-- ============================ PRODUCTS ============================ -->
+<section class="band band--paper" id="productos">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">El fuerte de la casa</span>
+      <h2 class="h2">Abrazaderas y anclajes para cada carga</h2>
+      <p class="lead">Desde sujeción de cañerías hasta anclaje estructural en hormigón. Medidas estándar en stock y fabricación especial contra plano.</p>
+    </div>
+
+    <div class="split-tabs reveal" role="tablist" aria-label="Categorías">
+      <button class="tab" role="tab" aria-selected="true" data-panel="abz">Abrazaderas</button>
+      <button class="tab" role="tab" aria-selected="false" data-panel="anc">Anclajes</button>
+    </div>
+
+    <!-- Abrazaderas -->
+    <div class="prod-panel active" id="abz">
+      <article class="pcard reveal">
+        <div class="pcard__img"><img loading="lazy" referrerpolicy="no-referrer" alt="Abrazadera tipo U" src="https://images.pexels.com/photos/8853524/pexels-photo-8853524.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&fit=crop"></div>
+        <h3>Abrazadera tipo U</h3>
+        <p>U-bolt para fijar cañerías, tubos y ductos. Doble tuerca y golilla.</p>
+        <div class="pcard__spec"><span class="chip">Ø 1/4"–3/4"</span><span class="chip">Zincado</span><span class="chip">Inox opcional</span></div>
+      </article>
+      <article class="pcard reveal d1">
+        <div class="pcard__img"><img loading="lazy" referrerpolicy="no-referrer" alt="Abrazadera Omega" src="https://images.pexels.com/photos/34928766/pexels-photo-34928766.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&fit=crop"></div>
+        <h3>Abrazadera Omega</h3>
+        <p>Estampada con pata de fijación. Ideal para tubería a la vista y montaje rápido.</p>
+        <div class="pcard__spec"><span class="chip">1/2"–4"</span><span class="chip">Con goma</span><span class="chip">Galvanizada</span></div>
+      </article>
+      <article class="pcard reveal d2">
+        <div class="pcard__img"><img loading="lazy" referrerpolicy="no-referrer" alt="Abrazadera sinfín" src="https://images.pexels.com/photos/28101220/pexels-photo-28101220.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&fit=crop"></div>
+        <h3>Abrazadera sinfín</h3>
+        <p>De banda perforada con tornillo sinfín. Manguera, riego y uniones flexibles.</p>
+        <div class="pcard__spec"><span class="chip">8–120 mm</span><span class="chip">W2 / W4</span><span class="chip">Banda 9–12 mm</span></div>
+      </article>
+      <article class="pcard reveal">
+        <div class="pcard__img"><img loading="lazy" referrerpolicy="no-referrer" alt="Abrazadera doble pasada" src="https://images.pexels.com/photos/5279361/pexels-photo-5279361.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&fit=crop"></div>
+        <h3>Abrazadera doble pasada</h3>
+        <p>Refuerzo para cargas suspendidas y soportería. Reparte el esfuerzo en dos puntos.</p>
+        <div class="pcard__spec"><span class="chip">3/8"–5/8"</span><span class="chip">Reforzada</span><span class="chip">A pedido</span></div>
+      </article>
+      <article class="pcard reveal d1">
+        <div class="pcard__img"><img loading="lazy" referrerpolicy="no-referrer" alt="Grapa o brida en U" src="https://images.pexels.com/photos/28700640/pexels-photo-28700640.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&fit=crop"></div>
+        <h3>Grapa / brida en U</h3>
+        <p>Grapa para cable y perfiles. Sujeción firme sobre estructura metálica.</p>
+        <div class="pcard__spec"><span class="chip">M6–M12</span><span class="chip">Con tarugo</span><span class="chip">Zincada</span></div>
+      </article>
+      <article class="pcard reveal d2">
+        <div class="pcard__img"><img loading="lazy" referrerpolicy="no-referrer" alt="Fabricación especial de abrazaderas" src="https://images.pexels.com/photos/15603045/pexels-photo-15603045.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&fit=crop"></div>
+        <h3>Fabricación especial</h3>
+        <p>¿No está en catálogo? La fabricamos contra tu plano o muestra física.</p>
+        <div class="pcard__spec"><span class="chip">Contra plano</span><span class="chip">Prototipo</span><span class="chip">Serie</span></div>
+      </article>
+    </div>
+
+    <!-- Anclajes -->
+    <div class="prod-panel" id="anc">
+      <article class="pcard reveal">
+        <div class="pcard__img"><img loading="lazy" referrerpolicy="no-referrer" alt="Anclaje de expansión" src="https://images.pexels.com/photos/17373000/pexels-photo-17373000.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&fit=crop"></div>
+        <h3>Anclaje de expansión</h3>
+        <p>Perno de camisa expansible para hormigón. Alta resistencia al arranque.</p>
+        <div class="pcard__spec"><span class="chip">M8–M20</span><span class="chip">Zincado</span><span class="chip">Cuña</span></div>
+      </article>
+      <article class="pcard reveal d1">
+        <div class="pcard__img"><img loading="lazy" referrerpolicy="no-referrer" alt="Anclaje químico" src="https://images.pexels.com/photos/17372998/pexels-photo-17372998.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&fit=crop"></div>
+        <h3>Anclaje químico</h3>
+        <p>Varilla + resina para máxima carga en hormigón fisurado y cargas dinámicas.</p>
+        <div class="pcard__spec"><span class="chip">M8–M24</span><span class="chip">Resina epóxica</span><span class="chip">Alta carga</span></div>
+      </article>
+      <article class="pcard reveal d2">
+        <div class="pcard__img"><img loading="lazy" referrerpolicy="no-referrer" alt="Anclaje autoperforante" src="https://images.pexels.com/photos/28197097/pexels-photo-28197097.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&fit=crop"></div>
+        <h3>Anclaje autoperforante</h3>
+        <p>Rosca cortante para fijación directa sin tarugo en materiales de baja densidad.</p>
+        <div class="pcard__spec"><span class="chip">Ø 6–10 mm</span><span class="chip">Punta broca</span><span class="chip">Bicromatado</span></div>
+      </article>
+      <article class="pcard reveal">
+        <div class="pcard__img"><img loading="lazy" referrerpolicy="no-referrer" alt="Perno J o L de anclaje" src="https://images.pexels.com/photos/21050460/pexels-photo-21050460.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&fit=crop"></div>
+        <h3>Perno J / L de anclaje</h3>
+        <p>Para empotrar en fundaciones y bases de máquina. Fabricación a la medida del proyecto.</p>
+        <div class="pcard__spec"><span class="chip">A pedido</span><span class="chip">Grado 4.6/8.8</span><span class="chip">Galvanizado</span></div>
+      </article>
+      <article class="pcard reveal d1">
+        <div class="pcard__img"><img loading="lazy" referrerpolicy="no-referrer" alt="Tarugo de expansión" src="https://images.pexels.com/photos/5583051/pexels-photo-5583051.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&fit=crop"></div>
+        <h3>Tarugo de expansión</h3>
+        <p>Nylon y metálico en todas las medidas. Combinable con tornillo según carga.</p>
+        <div class="pcard__spec"><span class="chip">S5–S14</span><span class="chip">Nylon / metal</span><span class="chip">Stock</span></div>
+      </article>
+      <article class="pcard reveal d2">
+        <div class="pcard__img"><img loading="lazy" referrerpolicy="no-referrer" alt="Anclaje especial" src="https://images.pexels.com/photos/8327959/pexels-photo-8327959.jpeg?auto=compress&cs=tinysrgb&w=900&h=600&fit=crop"></div>
+        <h3>Anclaje especial</h3>
+        <p>Medida o material fuera de norma. Lo mecanizamos según tu ficha o muestra.</p>
+        <div class="pcard__spec"><span class="chip">Contra plano</span><span class="chip">Inox 316</span><span class="chip">Serie</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ 3D MODEL ============================ -->
+<section class="band model3d" id="modelo">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Explóralo en 360°</span>
+      <h2 class="h2">Mira el detalle antes de comprar</h2>
+      <p class="lead">Gira la pieza, acércate a la rosca y compara terminados. Lo que ves en pantalla es lo que llega a tu mesón — con la medida y el grado que pides.</p>
+      <div class="m3d-finish" role="group" aria-label="Terminado del acero">
+        <button class="fbtn" data-finish="zincado" aria-pressed="true">Zincado</button>
+        <button class="fbtn" data-finish="galvanizado" aria-pressed="false">Galvanizado</button>
+        <button class="fbtn" data-finish="inox" aria-pressed="false">Inoxidable</button>
+        <button class="fbtn" data-finish="negro" aria-pressed="false">Negro</button>
+      </div>
+    </div>
+    <div class="m3d-stage reveal d1" id="m3dStage" aria-label="Modelo 3D interactivo de una abrazadera tipo U">
+      <span class="m3d-tag">FRG-3D · ABRAZADERA TIPO U</span>
+      <span class="m3d-hint"><b>Arrastra</b> para girar la pieza</span>
+      <div class="m3d-fallback" id="m3dFallback">
+        <div>
+          <svg viewBox="0 0 120 120" width="120" height="120" fill="none" stroke="#C9A24E" stroke-width="2" stroke-linejoin="round" style="margin:0 auto 16px; opacity:.85;">
+            <path d="M60 14l22 12v24L60 62 38 50V26z"/><circle cx="60" cy="38" r="10"/>
+            <path d="M60 62v44M50 106h20M52 74h16M52 84h16M52 94h16"/>
+          </svg>
+          <div style="font-family:var(--font-mono); font-size:12px; letter-spacing:.06em;">Conéctate a internet para explorar<br>la pieza en 360°.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ SERVICES ============================ -->
+<section class="band" id="servicios">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Hecho a tu medida</span>
+      <h2 class="h2">Tornería y trabajo a pedido</h2>
+      <p class="lead">No solo vendemos: el taller mecaniza. Si necesitas una medida que no existe en góndola, la producimos.</p>
+    </div>
+
+    <div class="serv-grid">
+      <article class="scard reveal">
+        <div class="scard__img"><img loading="lazy" referrerpolicy="no-referrer" alt="Roscado de hilos en torno" src="https://images.pexels.com/photos/18765609/pexels-photo-18765609.jpeg?auto=compress&cs=tinysrgb&w=1000&h=560&fit=crop"></div>
+        <div class="scard__n">SERV · 01</div>
+        <h3>Hilos a pedido</h3>
+        <p>Roscado métrico y estándar sobre barra, perno o pieza, en el paso y largo que necesites.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Rosca métrica y whitworth</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Varilla roscada a medida</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Roscado interior y exterior</li>
+        </ul>
+      </article>
+      <article class="scard reveal d1">
+        <div class="scard__img"><img loading="lazy" referrerpolicy="no-referrer" alt="Corte de metal a medida" src="https://images.pexels.com/photos/1145434/pexels-photo-1145434.jpeg?auto=compress&cs=tinysrgb&w=1000&h=560&fit=crop"></div>
+        <div class="scard__n">SERV · 02</div>
+        <h3>Cortes a medida</h3>
+        <p>Cortamos varilla, perno, barra y perfil al largo exacto de tu proyecto, sin desperdicio.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Corte al milímetro</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Cantidades por lote</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Desbarbado incluido</li>
+        </ul>
+      </article>
+      <article class="scard reveal d2">
+        <div class="scard__img"><img loading="lazy" referrerpolicy="no-referrer" alt="Fabricación de piezas en torno" src="https://images.pexels.com/photos/13121712/pexels-photo-13121712.jpeg?auto=compress&cs=tinysrgb&w=1000&h=560&fit=crop"></div>
+        <div class="scard__n">SERV · 03</div>
+        <h3>Fabricación de piezas</h3>
+        <p>Piezas de sujeción especiales torneadas contra plano, muestra física o croquis a mano.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Prototipo y serie</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Copia de pieza existente</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Acero, inox y bronce</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ RESEÑAS ============================ -->
+<section class="band band--paper" id="resenas">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Lo que dicen de nosotros</span>
+      <h2 class="h2">Ferreterías y maestros que ya nos prefieren</h2>
+      <p class="lead">Reseñas reales de clientes que dejaron de pelear con proveedores lentos.</p>
+    </div>
+    <div class="rev-slider reveal">
+      <div class="rev-viewport">
+        <div class="rev-track" id="revTrack"></div>
+      </div>
+      <div class="rev-nav">
+        <button class="rev-arrow" id="revPrev" aria-label="Reseña anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+        <div class="rev-dots" id="revDots"></div>
+        <button class="rev-arrow" id="revNext" aria-label="Reseña siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ WHY RG ============================ -->
+<section class="band" id="porque" style="background:#0b0c0f;">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Por qué comprar en RG</span>
+      <h2 class="h2">Menos vueltas, más obra avanzando</h2>
+    </div>
+    <div class="why-grid reveal">
+      <div class="why">
+        <div class="why__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l9-4 9 4-9 4z"/><path d="M3 7v10l9 4 9-4V7"/><path d="M12 11v10"/></svg></div>
+        <h3>Stock inmediato</h3>
+        <p>Fabricación propia y bodega surtida. Lo que pides, casi siempre está disponible hoy.</p>
+      </div>
+      <div class="why">
+        <div class="why__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M1 3h15v13H1z"/><path d="M16 8h4l3 3v5h-7z"/><circle cx="5.5" cy="18.5" r="1.8"/><circle cx="18.5" cy="18.5" r="1.8"/></svg></div>
+        <h3>Despacho propio</h3>
+        <p>Camión propio en Independencia y alrededores. Entrega en 24–48 horas coordinada.</p>
+      </div>
+      <div class="why">
+        <div class="why__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h9l3 3v17H6z"/><path d="M9 8h6M9 12h6M9 16h4"/></svg></div>
+        <h3>Factura desde el pedido 1</h3>
+        <p>Documentación formal siempre, sin importar el monto. Compra tranquila y rendible.</p>
+      </div>
+      <div class="why">
+        <div class="why__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <h3>Sin compra mínima</h3>
+        <p>Pensado para la ferretería chica: pides lo que necesitas, sin cajas obligadas.</p>
+      </div>
+      <div class="why">
+        <div class="why__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.5-6 8-6s8 2 8 6"/></svg></div>
+        <h3>Trato directo</h3>
+        <p>Hablas con los dueños, no con un vendedor de paso. Respuesta rápida y seguimiento real.</p>
+      </div>
+      <div class="why">
+        <div class="why__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4"/><circle cx="12" cy="12" r="3.4"/></svg></div>
+        <h3>Calidad certificable</h3>
+        <p>Grados 8.8, 10.9 y aceros inox A2/A4. Te decimos exactamente qué estás comprando.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ CLIENTES ============================ -->
+<section class="band" id="clientes">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Confianza que se construye</span>
+      <h2 class="h2">Trabajamos con quienes mueven la obra</h2>
+      <p class="lead">Ferreterías, constructoras y talleres nos eligen como socio de fijaciones — y contamos con proveedores serios que respaldan cada despacho.</p>
+    </div>
+  </div>
+  <div class="logo-row reveal">
+    <div class="wrap logo-row__label"><span>Clientes que confían</span></div>
+    <div class="logo-marquee"><div class="logo-track" id="logosClientes" data-dir="left"></div></div>
+  </div>
+  <div class="logo-row reveal">
+    <div class="wrap logo-row__label"><span>Nuestros proveedores</span></div>
+    <div class="logo-marquee"><div class="logo-track" id="logosProveedores" data-dir="right"></div></div>
+  </div>
+</section>
+
+<!-- ============================ PROCESS ============================ -->
+<section class="band band--paper" id="proceso">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Cómo pedir</span>
+      <h2 class="h2">De la medida al despacho en 3 pasos</h2>
+      <p class="lead">Un flujo simple para que cotizar no te quite la mañana.</p>
+    </div>
+    <div class="proc">
+      <div class="pstep reveal">
+        <div class="pstep__bar"><span></span></div>
+        <div class="pstep__n">PASO 01</div>
+        <h3>Cotiza</h3>
+        <p>Envías tu lista, medida o plano por el formulario o WhatsApp. Respondemos con precio y plazo el mismo día.</p>
+      </div>
+      <div class="pstep reveal d1">
+        <div class="pstep__bar"><span></span></div>
+        <div class="pstep__n">PASO 02</div>
+        <h3>Preparamos</h3>
+        <p>Tomamos del stock o mecanizamos a medida: cortamos, roscamos y fabricamos lo que no está en catálogo.</p>
+      </div>
+      <div class="pstep reveal d2">
+        <div class="pstep__bar"><span></span></div>
+        <div class="pstep__n">PASO 03</div>
+        <h3>Despachamos</h3>
+        <p>Entregamos con camión propio en 24–48 horas, con factura incluida. Pagas contra entrega.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ QUOTE / CTA ============================ -->
+<section class="band quote" id="cotizar">
+  <div class="wrap">
+    <div class="quote__copy reveal">
+      <span class="eyebrow">Pide tu cotización</span>
+      <h2>Dinos qué necesitas<br>y te <em>respondemos hoy</em>.</h2>
+      <p class="quote__p">Manda tu lista de materiales, una medida o una foto de la pieza. Sin compromiso y sin mínimo de compra.</p>
+
+      <div class="contact-list">
+        <a class="contact-item" href="https://wa.me/56920488227" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 21l2.2-5.3A8.5 8.5 0 1 1 21 11.5z"/><path d="M8.5 9.5c0 3 2 5 5 5 .8 0 1.4-.9 1-1.6l-1-.6-1.2.8c-1-.4-1.8-1.2-2.2-2.2l.8-1.2-.6-1c-.7-.4-1.6.2-1.6 1z"/></svg>
+          <div><span>WhatsApp comercial</span>+56 9 2048 8227</div>
+        </a>
+        <a class="contact-item" href="mailto:fijaciones.rg@gmail.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+          <div><span>Correo</span>fijaciones.rg@gmail.com</div>
+        </a>
+        <div class="contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.7-7-11a7 7 0 0 1 14 0c0 5.3-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          <div><span>Zona de despacho</span>Independencia y alrededores · Santiago</div>
+        </div>
+      </div>
+    </div>
+
+    <form class="qform reveal d1" id="quoteForm" novalidate>
+      <h3>Solicitud de cotización</h3>
+      <p class="small">Te respondemos con precio y plazo el mismo día hábil.</p>
+
+      <div class="field">
+        <label for="q-name">Nombre y empresa</label>
+        <input id="q-name" name="name" type="text" placeholder="Ej: Juan Pérez · Ferretería El Perno" required />
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="q-phone">WhatsApp / teléfono</label>
+          <input id="q-phone" name="phone" type="tel" placeholder="+56 9 ..." required />
+        </div>
+        <div class="field">
+          <label for="q-email">Correo</label>
+          <input id="q-email" name="email" type="email" placeholder="tucorreo@..." />
+        </div>
+      </div>
+      <div class="field">
+        <label for="q-prod">Qué necesitas</label>
+        <select id="q-prod" name="product">
+          <option>Abrazaderas</option>
+          <option>Anclajes</option>
+          <option>Pernos / tuercas / golillas</option>
+          <option>Hilos o cortes a medida</option>
+          <option>Fabricación especial (contra plano)</option>
+          <option>Varios / lista completa</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="q-msg">Detalle (medidas, cantidades, plazo)</label>
+        <textarea id="q-msg" name="message" placeholder="Ej: 200 abrazaderas tipo U de 1/2'', zincadas, para el jueves."></textarea>
+      </div>
+      <button type="submit" class="btn btn--primary" id="quoteSubmit">
+        Enviar solicitud
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4z"/></svg>
+      </button>
+      <a class="qform__wa" id="quoteWa" href="https://wa.me/56920488227" target="_blank" rel="noopener">o cotiza directo por WhatsApp →</a>
+      <p class="form-ok" id="quoteOk" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>¡Recibido! Te contactamos hoy mismo por WhatsApp o correo.</span></p>
+      <p class="form-note">Respondemos el mismo día hábil. Sin compromiso y sin mínimo de compra.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ============================ FOOTER ============================ -->
+<footer class="mfooter" id="site-footer">
+  <div class="mfooter__cta reveal">
+    <h2>¿Listo para <em>cotizar sin vueltas</em>?</h2>
+    <p>Mándanos tu lista o tu medida. Te respondemos hoy mismo.</p>
+    <a href="#cotizar" class="btn btn--primary">Pedir cotización
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+  <div class="wrap">
+    <div class="mfooter__cols">
+      <div>
+        <a class="brand" href="#top" aria-label="Fijaciones RG, inicio">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none">
+              <path d="M16 2.6 27 9 V23 L16 29.4 5 23 V9 Z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+              <path d="M16 9.4 22.4 13 V19.8 L16 23.4 9.6 19.8 V13 Z" fill="currentColor"/>
+              <circle cx="16" cy="16.4" r="1.7" fill="#14140E"/>
+            </svg>
+          </span>
+          <span><span class="brand__name">Fijaciones <b>RG</b></span><span class="brand__tag">Tornería · Fijaciones</span></span>
+        </a>
+        <p class="desc">Fabricación y venta de fijaciones industriales. Abrazaderas, anclajes, hilos y cortes a pedido con despacho propio en Santiago.</p>
+      </div>
+      <div class="mfcol">
+        <h4>Productos</h4>
+        <a href="#productos">Abrazaderas</a>
+        <a href="#productos">Anclajes</a>
+        <a href="#modelo">Modelo 3D</a>
+        <a href="planes.html">Planes</a>
+      </div>
+      <div class="mfcol">
+        <h4>Servicios</h4>
+        <a href="#servicios">Hilos a pedido</a>
+        <a href="#servicios">Cortes a medida</a>
+        <a href="#servicios">Fabricación</a>
+        <a href="blog.html">Blog</a>
+      </div>
+      <div class="mfcol">
+        <h4>Contacto</h4>
+        <a href="https://wa.me/56920488227" target="_blank" rel="noopener">WhatsApp +56 9 2048 8227</a>
+        <a href="mailto:fijaciones.rg@gmail.com">fijaciones.rg@gmail.com</a>
+        <a href="#cotizar">Pedir cotización</a>
+      </div>
+    </div>
+    <div class="mfoot-bottom">
+      <span>© 2026 Fijaciones RG · Sitio de demostración</span>
+      <span>Independencia · Santiago · Chile</span>
+    </div>
+  </div>
+  <div class="mfooter__word" aria-hidden="true"><span>FIJACIONES RG</span></div>
+</footer>
+
+<!-- ============================ AI CHAT ASSISTANT ============================ -->
+<button class="chat-fab" id="chatFab" aria-label="Abrir asistente de Fijaciones RG">
+  <span class="chat-fab__dot" aria-hidden="true"></span>
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H8l-4 4V5a2 2 0 0 1 2-2h13a2 2 0 0 1 2 2z"/><path d="M8 9h8M8 13h5"/></svg>
+</button>
+<div class="chat-panel" id="chatPanel" role="dialog" aria-label="Asistente RG" aria-hidden="true">
+  <div class="chat-head">
+    <div class="chat-head__av" aria-hidden="true">RG</div>
+    <div class="chat-head__t">
+      <b>Asistente RG</b>
+      <span>En línea · te responde al instante</span>
+    </div>
+    <button class="chat-head__x" id="chatClose" aria-label="Cerrar chat">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+  <div class="chat-body" id="chatBody"></div>
+  <div class="chat-quick" id="chatQuick"></div>
+</div>
+
+<!-- ============================ FLOATING DOCK ============================ -->
+<div class="dock-shell" aria-label="Acciones rápidas">
+  <div class="dock" id="dock">
+    <a class="dock-item dock-item--cta" href="#cotizar" data-tip="Cotizar">
+      <span class="dock-item__tip">Cotizar</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h10M4 18h7"/></svg>
+    </a>
+    <a class="dock-item" href="https://wa.me/56920488227" target="_blank" rel="noopener" data-tip="WhatsApp">
+      <span class="dock-item__tip">WhatsApp</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 21l2.2-5.3A8.5 8.5 0 1 1 21 11.5z"/><path d="M8.5 9.5c0 3 2 5 5 5 .8 0 1.4-.9 1-1.6l-1-.6-1.2.8c-1-.4-1.8-1.2-2.2-2.2l.8-1.2-.6-1c-.7-.4-1.6.2-1.6 1z"/></svg>
+    </a>
+    <a class="dock-item" href="mailto:fijaciones.rg@gmail.com" data-tip="Correo">
+      <span class="dock-item__tip">Correo</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+    </a>
+    <span class="dock-sep"></span>
+    <a class="dock-item" href="#productos" data-tip="Catálogo">
+      <span class="dock-item__tip">Catálogo</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v14H4z"/><path d="M8 5v14M4 9h4M4 13h4"/></svg>
+    </a>
+    <a class="dock-item" href="#top" data-tip="Inicio">
+      <span class="dock-item__tip">Inicio</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/></svg>
+    </a>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function(){
+  "use strict";
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* ---- Header scroll state ---- */
+  var header = document.getElementById("header");
+  function onScroll(){ header.classList.toggle("scrolled", window.scrollY > 20); }
+  onScroll(); window.addEventListener("scroll", onScroll, {passive:true});
+
+  /* ---- Mobile menu ---- */
+  var mnav = document.getElementById("mnav");
+  document.getElementById("menuToggle").addEventListener("click", function(){ mnav.classList.add("open"); });
+  document.getElementById("mnavClose").addEventListener("click", function(){ mnav.classList.remove("open"); });
+  mnav.querySelectorAll("a").forEach(function(a){ a.addEventListener("click", function(){ mnav.classList.remove("open"); }); });
+
+  /* ---- Marquee content ---- */
+  var items = [
+    ["Pernos", "grado 8.8 · 10.9"], ["Abrazaderas", "1/4\" – 4\""], ["Anclajes", "M8 – M24"],
+    ["Tuercas", "M6 · M8 · M10"], ["Golillas", "planas · presión"], ["Varilla roscada", "a medida"],
+    ["Inox", "A2 · A4 / 316"], ["Tornillos", "autoperforantes"], ["Tarugos", "S5 – S14"],
+    ["Hilos a pedido", "métrico · whitworth"], ["Cortes", "al milímetro"]
+  ];
+  var track = document.getElementById("marqTrack");
+  function buildMarquee(){
+    var html = "";
+    for (var pass=0; pass<2; pass++){
+      items.forEach(function(it){
+        html += '<div class="marquee__item"><b>'+it[0]+'</b> '+it[1]+'<span class="marquee__dot"></span></div>';
+      });
+    }
+    track.innerHTML = html;
+  }
+  buildMarquee();
+
+  /* ---- Client / supplier logo marquees ---- */
+  var MARKS = {
+    hex:'<path d="M12 3l7 4v10l-7 4-7-4V7z"/>',
+    bolt:'<path d="M13 2L4 14h7l-1 8 9-12h-7z"/>',
+    mount:'<path d="M3 20h18L12 4z"/>',
+    layers:'<path d="M12 3l9 5-9 5-9-5zM3 13l9 5 9-5"/>',
+    drop:'<path d="M12 3s6 6 6 10a6 6 0 0 1-12 0c0-4 6-10 6-10z"/>',
+    bars:'<path d="M5 20V10M12 20V4M19 20v-7"/>',
+    box:'<path d="M3 7l9-4 9 4v10l-9 4-9-4z"/>',
+    gear:'<circle cx="12" cy="12" r="3.2"/><path d="M12 4v2M12 18v2M4 12h2M18 12h2M6 6l1.5 1.5M16.5 16.5 18 18M18 6l-1.5 1.5M7.5 16.5 6 18"/>',
+    shield:'<path d="M12 3l8 3v6c0 5-4 8-8 9-4-1-8-4-8-9V6z"/>',
+    truck:'<path d="M1 6h13v9H1zM14 9h4l3 3v3h-7z"/><circle cx="5.5" cy="17" r="1.5"/><circle cx="17.5" cy="17" r="1.5"/>'
+  };
+  function svgMark(k){ return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">'+(MARKS[k]||MARKS.hex)+'</svg>'; }
+  function buildLogos(el, list){
+    if(!el) return; var html="";
+    for(var pass=0; pass<2; pass++){
+      list.forEach(function(l){ html += '<div class="logo-item">'+svgMark(l[2])+'<b>'+l[0]+'</b><i>'+l[1]+'</i></div>'; });
+    }
+    el.innerHTML = html;
+  }
+  buildLogos(document.getElementById('logosClientes'), [
+    ['El Maestro','Ferretería','hex'],['Constructora Andes','Obra','mount'],
+    ['Barraca Centro','Materiales','box'],['Montajes RM','Instalación','bolt'],
+    ['Riego y Campo','Agrícola','drop'],['Aceros del Sur','Taller','bars'],
+    ['Ferretería Norte','Retail','hex']
+  ]);
+  buildLogos(document.getElementById('logosProveedores'), [
+    ['Metalúrgica Prime','Fabricación','gear'],['Galvanotecnia CL','Galvanizado','layers'],
+    ['Aceros Prime','Acero','bars'],['Importadora Sujeta','Importación','box'],
+    ['Insumos Industriales','Insumos','hex'],['Distribuidora Ferro','Logística','truck'],
+    ['Zinctek','Terminados','shield']
+  ]);
+
+  /* ---- Reviews slider ---- */
+  (function(){
+    var track = document.getElementById('revTrack');
+    if(!track) return;
+    var reviews = [
+      {n:5, q:"Pedí 300 abrazaderas tipo U un martes y las tenía el miércoles temprano. Así da gusto.", a:"Rodrigo Muñoz", r:"Ferretería El Maestro · Independencia", av:"RM"},
+      {n:5, q:"Me cortan la varilla al largo justo y con factura. Dejé de perder tiempo cortando en el local.", a:"Claudia Soto", r:"Barraca Centro · Recoleta", av:"CS"},
+      {n:5, q:"Necesitaba un anclaje especial contra plano y lo dejaron igual a la muestra. Cero reclamos.", a:"Jorge Tapia", r:"Montajes RM · Quilicura", av:"JT"},
+      {n:5, q:"Sin compra mínima y contestan al toque por WhatsApp. Para una ferretería chica eso vale oro.", a:"Pía Rojas", r:"Ferretería San Jorge · Conchalí", av:"PR"},
+      {n:4, q:"Precios claros y el camión llega cuando dicen. Ya son mi proveedor fijo de pernos.", a:"Héctor Vera", r:"Constructora Andes · Huechuraba", av:"HV"}
+    ];
+    var STAR = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.5 7 .8-5 4.8 1.3 7L12 18l-6.6 3 1.3-7-5-4.8 7-.8z"/></svg>';
+    var STAR_OFF = '<svg class="off" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.5 7 .8-5 4.8 1.3 7L12 18l-6.6 3 1.3-7-5-4.8 7-.8z"/></svg>';
+    function stars(n){ var s=""; for(var i=0;i<5;i++){ s += (i<n ? STAR : STAR_OFF); } return s; }
+    var html="", dots="";
+    reviews.forEach(function(rv,i){
+      html += '<div class="rev-slide"><div class="rev-quote"><div class="stars">'+stars(rv.n)+'</div>'+
+        '<blockquote>“'+rv.q+'”</blockquote>'+
+        '<div class="rcard__who"><div class="rcard__av">'+rv.av+'</div><div style="text-align:left"><div class="rcard__n">'+rv.a+'</div><div class="rcard__r">'+rv.r+'</div></div></div></div></div>';
+      dots += '<button class="rev-dot'+(i===0?' active':'')+'" data-i="'+i+'" aria-label="Reseña '+(i+1)+'"></button>';
+    });
+    track.innerHTML = html;
+    var dotsEl = document.getElementById('revDots'); dotsEl.innerHTML = dots;
+    var idx=0, total=reviews.length, timer;
+    function go(i){ idx=(i+total)%total; track.style.transform='translateX(-'+(idx*100)+'%)';
+      var ds=dotsEl.querySelectorAll('.rev-dot'); for(var j=0;j<ds.length;j++){ ds[j].classList.toggle('active', j===idx); } }
+    function autoplay(){ if(reduce) return; clearInterval(timer); timer=setInterval(function(){ go(idx+1); }, 6000); }
+    document.getElementById('revPrev').addEventListener('click', function(){ go(idx-1); autoplay(); });
+    document.getElementById('revNext').addEventListener('click', function(){ go(idx+1); autoplay(); });
+    dotsEl.querySelectorAll('.rev-dot').forEach(function(d){ d.addEventListener('click', function(){ go(+d.dataset.i); autoplay(); }); });
+    autoplay();
+  })();
+
+  /* ---- Product tabs ---- */
+  var tabs = document.querySelectorAll(".tab");
+  tabs.forEach(function(tab){
+    tab.addEventListener("click", function(){
+      tabs.forEach(function(t){ t.setAttribute("aria-selected","false"); });
+      tab.setAttribute("aria-selected","true");
+      document.querySelectorAll(".prod-panel").forEach(function(p){ p.classList.remove("active"); });
+      document.getElementById(tab.dataset.panel).classList.add("active");
+    });
+  });
+
+  /* ---- Product cards -> category detail pages ---- */
+  function slugify(s){
+    return (s||"").toLowerCase()
+      .replace(/[áàä]/g,"a").replace(/[éèë]/g,"e").replace(/[íìï]/g,"i")
+      .replace(/[óòö]/g,"o").replace(/[úùü]/g,"u").replace(/ñ/g,"n")
+      .replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"");
+  }
+  document.querySelectorAll(".prod-panel").forEach(function(panel){
+    var cat = panel.id === "anc" ? "anclajes" : "abrazaderas";
+    panel.querySelectorAll(".pcard").forEach(function(card){
+      var h3 = card.querySelector("h3"); if(!h3) return;
+      var href = "categorias/" + cat + ".html#" + slugify(h3.textContent);
+      var more = document.createElement("div");
+      more.className = "pcard__more";
+      more.innerHTML = "Ver ficha completa <svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><path d='M5 12h14M13 6l6 6-6 6'/></svg>";
+      card.appendChild(more);
+      card.setAttribute("role","link"); card.setAttribute("tabindex","0");
+      card.addEventListener("click", function(){ window.location.href = href; });
+      card.addEventListener("keydown", function(e){ if(e.key==="Enter" || e.key===" "){ e.preventDefault(); window.location.href = href; } });
+    });
+  });
+
+  /* ---- Reveal on scroll ---- */
+  if ("IntersectionObserver" in window && !reduce){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting){
+          e.target.classList.add("in");
+          // fill process bars when process section reveals
+          if (e.target.classList.contains("pstep")){
+            var bar = e.target.querySelector(".pstep__bar span");
+            if (bar){ bar.style.transition = "width 1s cubic-bezier(.22,.61,.36,1)"; bar.style.width = "100%"; }
+          }
+          io.unobserve(e.target);
+        }
+      });
+    }, {threshold:0.15, rootMargin:"0px 0px -8% 0px"});
+    document.querySelectorAll(".reveal").forEach(function(el){ io.observe(el); });
+  } else {
+    document.querySelectorAll(".reveal").forEach(function(el){ el.classList.add("in"); });
+    document.querySelectorAll(".pstep__bar span").forEach(function(s){ s.style.width="100%"; });
+  }
+
+  /* ---- Blueprint draw-in ---- */
+  if (!reduce){
+    document.querySelectorAll(".bp-svg .draw").forEach(function(path, i){
+      try{
+        var len = path.getTotalLength ? path.getTotalLength() : 300;
+        path.style.strokeDasharray = len;
+        path.style.strokeDashoffset = len;
+        path.style.transition = "stroke-dashoffset 1.1s cubic-bezier(.22,.61,.36,1) " + (0.25 + i*0.12) + "s";
+        requestAnimationFrame(function(){ requestAnimationFrame(function(){ path.style.strokeDashoffset = "0"; }); });
+      }catch(err){}
+    });
+  }
+
+  /* ---- Animated dock (magnify by cursor distance) ---- */
+  var dock = document.getElementById("dock");
+  var dockItems = Array.prototype.slice.call(dock.querySelectorAll(".dock-item"));
+  var BASE = 46, MAX = 62, RANGE = 90;
+  if (!reduce && window.matchMedia("(pointer:fine)").matches){
+    dock.addEventListener("mousemove", function(e){
+      dockItems.forEach(function(item){
+        var r = item.getBoundingClientRect();
+        var c = r.left + r.width/2;
+        var d = Math.abs(e.clientX - c);
+        var t = Math.max(0, 1 - d/RANGE);
+        var sz = BASE + (MAX-BASE)*t;
+        item.style.width = sz+"px"; item.style.height = sz+"px";
+      });
+    });
+    dock.addEventListener("mouseleave", function(){
+      dockItems.forEach(function(item){ item.style.width=""; item.style.height=""; });
+    });
+  }
+
+  /* ---- Quote form -> Web3Forms inbox (fallback: WhatsApp) ----
+     ► Para recibir las cotizaciones en tu correo/planilla:
+       1. Entra a https://web3forms.com y pon tu correo (es gratis).
+       2. Copia tu "Access Key".
+       3. Pégala abajo reemplazando REEMPLAZA-CON-TU-ACCESS-KEY.
+     Mientras no la pongas, el formulario sigue funcionando por WhatsApp.        */
+  var WEB3FORMS_KEY = "5e3a5882-5364-4755-ae2c-a70cdc804d8f";
+  var WA_NUMBER = "56920488227";
+  var form = document.getElementById("quoteForm");
+  var formNote = form.querySelector(".form-note");
+  var formOk = document.getElementById("quoteOk");
+  var submitBtn = document.getElementById("quoteSubmit");
+  var waLink = document.getElementById("quoteWa");
+  function fval(id){ var el=document.getElementById(id); return el ? (el.value||"").trim() : ""; }
+  function ffocus(id){ var el=document.getElementById(id); if(el){ el.focus(); el.style.borderColor="var(--gold)"; } }
+  function keyReady(){ return WEB3FORMS_KEY && WEB3FORMS_KEY.length > 20 && WEB3FORMS_KEY.indexOf("REEMPLAZA") === -1; }
+  function readForm(){ return { name:fval("q-name"), phone:fval("q-phone"), email:fval("q-email"), prod:fval("q-prod"), msg:fval("q-msg") }; }
+  function waText(d){
+    var t = "¡Hola Fijaciones RG! 🙌 Los vi en la web y quiero cotizar.\n\n";
+    t += "Soy " + d.name + ".\n";
+    t += "Necesito: " + d.prod + (d.msg ? " — " + d.msg : "") + ".\n";
+    t += "Mi contacto: " + d.phone + (d.email ? " / " + d.email : "") + ".\n\n";
+    t += "¿Me ayudan con precio y plazo? ¡Gracias!";
+    return t;
+  }
+  function openWa(d){ window.open("https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(waText(d)), "_blank", "noopener"); }
+
+  if(waLink){
+    waLink.addEventListener("click", function(e){
+      var d = readForm();
+      if(d.name && d.phone){ e.preventDefault(); openWa(d); }
+    });
+  }
+
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+    var d = readForm();
+    if(!d.name){ ffocus("q-name"); return; }
+    if(!d.phone){ ffocus("q-phone"); return; }
+
+    if(!keyReady()){
+      openWa(d);
+      if(formNote){ formNote.innerHTML = "Abrimos WhatsApp con tu solicitud lista para enviar."; formNote.style.color = "var(--gold)"; }
+      return;
+    }
+
+    if(submitBtn) submitBtn.classList.add("is-loading");
+    var payload = {
+      access_key: WEB3FORMS_KEY,
+      subject: "Nueva cotización web · " + d.name,
+      from_name: "Fijaciones RG — Sitio web",
+      replyto: d.email || "",
+      "Nombre y empresa": d.name,
+      "WhatsApp o telefono": d.phone,
+      "Correo": d.email || "(no indicado)",
+      "Producto": d.prod,
+      "Detalle": d.msg || "(sin especificar)"
+    };
+    fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "Accept": "application/json" },
+      body: JSON.stringify(payload)
+    }).then(function(r){ return r.json(); }).then(function(res){
+      if(submitBtn) submitBtn.classList.remove("is-loading");
+      if(res && res.success){
+        form.reset();
+        if(formOk) formOk.hidden = false;
+        if(submitBtn) submitBtn.style.display = "none";
+        if(formNote) formNote.style.display = "none";
+      } else { openWa(d); }
+    }).catch(function(){
+      if(submitBtn) submitBtn.classList.remove("is-loading");
+      openWa(d);
+    });
+  });
+
+  /* ---- year ---- */
+})();
+
+/* ======================= CHAT ASSISTANT ======================= */
+(function(){
+  "use strict";
+  var fab = document.getElementById("chatFab"),
+      panel = document.getElementById("chatPanel"),
+      body = document.getElementById("chatBody"),
+      quick = document.getElementById("chatQuick"),
+      closeBtn = document.getElementById("chatClose");
+  if(!fab || !panel) return;
+  var WA = "https://wa.me/56920488227";
+
+  var qmap = {
+    "Quiero cotizar": "Perfecto 👍 Manda tu lista o medida en el <a href=\"#cotizar\">formulario de cotización</a> y te respondemos hoy mismo, o directo por <a href=\""+WA+"\" target=\"_blank\" rel=\"noopener\">WhatsApp</a>.",
+    "¿Cuánto demora la entrega?": "Entregamos en <b>24 a 48 horas</b> en Independencia y alrededores, con camión propio. Coordinamos día y hora al confirmar el pedido.",
+    "¿Qué productos tienen?": "Nuestro fuerte son <b>abrazaderas y anclajes</b>: tipo U, Omega, sinfín, de expansión, químicos, tarugos y más. También pernos, tuercas, golillas y varilla roscada. Mira la <a href=\"#productos\">línea completa</a>.",
+    "Hilos y cortes a medida": "Sí: roscamos hilos (métrico y whitworth) y cortamos varilla, perno o barra al largo exacto. Cuéntanos la medida y te cotizamos. Ver <a href=\"#servicios\">servicios</a>.",
+    "¿Emiten factura?": "Siempre, desde el primer pedido y sin monto mínimo. Puedes pagar contra entrega por transferencia o efectivo.",
+    "Hablar con una persona": "¡Con gusto! Escríbenos por <a href=\""+WA+"\" target=\"_blank\" rel=\"noopener\">WhatsApp +56 9 2048 8227</a> o a fijaciones.rg@gmail.com y te atiende un dueño directamente."
+  };
+  var quicks = Object.keys(qmap);
+
+  function addMsg(text, who){
+    var m = document.createElement("div");
+    m.className = "msg msg--" + who;
+    m.innerHTML = text;
+    body.appendChild(m); body.scrollTop = body.scrollHeight;
+  }
+  function typeBot(text){
+    var t = document.createElement("div");
+    t.className = "msg msg--bot"; t.textContent = "···";
+    body.appendChild(t); body.scrollTop = body.scrollHeight;
+    setTimeout(function(){ t.innerHTML = text; body.scrollTop = body.scrollHeight; }, 480);
+  }
+  function renderQuick(){
+    quick.innerHTML = "";
+    quicks.forEach(function(q){
+      var b = document.createElement("button");
+      b.className = "qr"; b.type = "button"; b.textContent = q;
+      b.addEventListener("click", function(){ addMsg(q, "user"); typeBot(qmap[q]); });
+      quick.appendChild(b);
+    });
+  }
+  var started = false;
+  function openChat(){
+    panel.classList.add("open"); panel.setAttribute("aria-hidden","false"); fab.style.display = "none";
+    if(!started){
+      started = true;
+      typeBot("¡Hola! Soy el asistente de Fijaciones RG 👋 ¿En qué te ayudo? Toca una opción:");
+      renderQuick();
+    }
+  }
+  function closeChat(){ panel.classList.remove("open"); panel.setAttribute("aria-hidden","true"); fab.style.display = "grid"; }
+  fab.addEventListener("click", openChat);
+  closeBtn.addEventListener("click", closeChat);
+  document.addEventListener("keydown", function(e){ if(e.key==="Escape" && panel.classList.contains("open")) closeChat(); });
+})();
+
+/* ======================= 3D MODEL VIEWER ======================= */
+(function(){
+  "use strict";
+  var stage = document.getElementById("m3dStage");
+  if(!stage) return;
+  var fallback = document.getElementById("m3dFallback");
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var THREE = window.THREE;
+  if(!THREE){ if(fallback) fallback.classList.add("show"); return; }
+
+  var W = stage.clientWidth || 480, H = stage.clientHeight || 480;
+  var scene = new THREE.Scene();
+  var camera = new THREE.PerspectiveCamera(38, W/H, 0.1, 100);
+  camera.position.set(0,0,8.2);
+
+  var renderer;
+  try{ renderer = new THREE.WebGLRenderer({antialias:true, alpha:true}); }
+  catch(e){ if(fallback) fallback.classList.add("show"); return; }
+  renderer.setPixelRatio(Math.min((window.devicePixelRatio||1) * 1.5, 3));
+  renderer.setSize(W,H);
+  if(THREE.sRGBEncoding) renderer.outputEncoding = THREE.sRGBEncoding;
+  stage.appendChild(renderer.domElement);
+
+  /* Environment for metallic reflections */
+  function makeEnvTex(){
+    var c = document.createElement("canvas"); c.width=64; c.height=256;
+    var g = c.getContext("2d");
+    var grd = g.createLinearGradient(0,0,0,256);
+    grd.addColorStop(0.00,"#454b57");
+    grd.addColorStop(0.42,"#16181d");
+    grd.addColorStop(0.50,"#efe0ba");   /* warm horizon glint */
+    grd.addColorStop(0.58,"#16181d");
+    grd.addColorStop(1.00,"#050608");
+    g.fillStyle=grd; g.fillRect(0,0,64,256);
+    var tex = new THREE.CanvasTexture(c);
+    tex.mapping = THREE.EquirectangularReflectionMapping;
+    return tex;
+  }
+  try{
+    var pmrem = new THREE.PMREMGenerator(renderer);
+    scene.environment = pmrem.fromEquirectangular(makeEnvTex()).texture;
+  }catch(e){ scene.environment = makeEnvTex(); }
+
+  /* Lights */
+  scene.add(new THREE.HemisphereLight(0xffffff, 0x24272f, 0.95));
+  scene.add(new THREE.AmbientLight(0xffffff, 0.28));
+  var key = new THREE.DirectionalLight(0xfff2d6, 1.9); key.position.set(4,6,5); scene.add(key);
+  var fill = new THREE.DirectionalLight(0xd2dcec, 0.85); fill.position.set(-4,1,4); scene.add(fill);
+  var rim = new THREE.DirectionalLight(0xc3d6f2, 1.0); rim.position.set(-5,3,-5); scene.add(rim);
+
+  /* Materials */
+  var finishes = {
+    zincado:     {color:0xd7dbe1, metalness:0.92, roughness:0.33},
+    galvanizado: {color:0xa8aeb5, metalness:0.70, roughness:0.55},
+    inox:        {color:0xcfd4db, metalness:1.00, roughness:0.18},
+    negro:       {color:0x17181c, metalness:0.85, roughness:0.42}
+  };
+  var mat = new THREE.MeshStandardMaterial(finishes.zincado);
+
+  /* U-bolt (abrazadera tipo U) — curved rod + threaded legs + golillas + tuercas */
+  var bolt = new THREE.Group();
+  var RS = 64, rodR = 0.17, W = 0.9, legTop = 0.95, legBot = -1.75;
+
+  function makeHelix(r,h,t){
+    var c = new THREE.Curve();
+    c.getPoint = function(u,opt){
+      var p = opt || new THREE.Vector3();
+      var a = t*Math.PI*2*u;
+      return p.set(r*Math.cos(a), h*(u-0.5), r*Math.sin(a));
+    };
+    return c;
+  }
+
+  // Rounded top of the U (half torus connecting both legs)
+  var uTop = new THREE.Mesh(new THREE.TorusGeometry(W, rodR, 32, 96, Math.PI), mat);
+  uTop.position.set(0, legTop, 0); bolt.add(uTop);
+
+  // The two straight legs
+  var legLen = legTop - legBot;
+  var legGeo = new THREE.CylinderGeometry(rodR, rodR, legLen, RS);
+  var legL = new THREE.Mesh(legGeo, mat); legL.position.set(-W, (legTop+legBot)/2, 0); bolt.add(legL);
+  var legR = new THREE.Mesh(legGeo, mat); legR.position.set( W, (legTop+legBot)/2, 0); bolt.add(legR);
+
+  // Rounded caps at the leg ends
+  var capGeo = new THREE.SphereGeometry(rodR, 24, 16);
+  var capL = new THREE.Mesh(capGeo, mat); capL.position.set(-W, legBot, 0); bolt.add(capL);
+  var capR = new THREE.Mesh(capGeo, mat); capR.position.set( W, legBot, 0); bolt.add(capR);
+
+  // Thread helix over the lower portion of each leg
+  function threadMesh(){ return new THREE.Mesh(new THREE.TubeGeometry(makeHelix(rodR+0.018, 1.5, 22), 300, 0.03, 8, false), mat); }
+  var thL = threadMesh(); thL.position.set(-W, -1.0, 0); bolt.add(thL);
+  var thR = threadMesh(); thR.position.set( W, -1.0, 0); bolt.add(thR);
+
+  // Mounting plate (saddle) the legs pass through
+  var plate = new THREE.Mesh(new THREE.BoxGeometry(2.5, 0.5, 0.42), mat);
+  plate.position.set(0, -0.55, 0); bolt.add(plate);
+
+  // Golillas (washers) + tuercas (hex nuts) on each leg, below the plate
+  var washGeo = new THREE.CylinderGeometry(0.31, 0.31, 0.07, RS);
+  var nutGeo  = new THREE.CylinderGeometry(0.29, 0.29, 0.24, 6);
+  function addFasteners(x){
+    var w = new THREE.Mesh(washGeo, mat); w.position.set(x, -0.86, 0); bolt.add(w);
+    var n = new THREE.Mesh(nutGeo, mat); n.position.set(x, -1.06, 0); n.rotation.y = Math.PI/6; bolt.add(n);
+  }
+  addFasteners(-W); addFasteners(W);
+
+  bolt.position.y = -0.05; bolt.rotation.x = -0.12;
+  var pivot = new THREE.Group(); pivot.add(bolt); scene.add(pivot);
+
+  /* Hotspots */
+  var hotspots = [
+    {pos:new THREE.Vector3(0,1.85,0),     label:"Curva en U"},
+    {pos:new THREE.Vector3(-0.9,-1.35,0.18),label:"Rosca métrica"},
+    {pos:new THREE.Vector3(0.9,-1.06,0.24), label:"Tuerca y golilla"}
+  ];
+  hotspots.forEach(function(h){
+    var el = document.createElement("div"); el.className="m3d-hot";
+    el.innerHTML = '<i></i><span>'+h.label+'</span>';
+    stage.appendChild(el); h.el = el;
+  });
+
+  /* Controls */
+  var dragging=false, px=0, py=0, autoRot=!reduce;
+  var targetY = 0, targetX = bolt.rotation.x;
+  function pt(e){ return (e.touches&&e.touches[0]) ? {x:e.touches[0].clientX,y:e.touches[0].clientY} : {x:e.clientX,y:e.clientY}; }
+  function down(e){ dragging=true; autoRot=false; var p=pt(e); px=p.x; py=p.y; }
+  function move(e){ if(!dragging) return; var p=pt(e); targetY += (p.x-px)*0.008; targetX += (p.y-py)*0.006; targetX=Math.max(-0.6,Math.min(0.6,targetX)); px=p.x; py=p.y; }
+  function up(){ dragging=false; }
+  stage.addEventListener("mousedown",down); window.addEventListener("mousemove",move); window.addEventListener("mouseup",up);
+  stage.addEventListener("touchstart",down,{passive:true}); stage.addEventListener("touchmove",move,{passive:true}); stage.addEventListener("touchend",up);
+
+  /* Finish buttons */
+  document.querySelectorAll(".fbtn").forEach(function(b){
+    b.addEventListener("click", function(){
+      document.querySelectorAll(".fbtn").forEach(function(x){ x.setAttribute("aria-pressed","false"); });
+      b.setAttribute("aria-pressed","true");
+      var f = finishes[b.dataset.finish];
+      if(f){ mat.color.setHex(f.color); mat.metalness=f.metalness; mat.roughness=f.roughness; mat.needsUpdate=true; }
+    });
+  });
+
+  /* Visibility gate + loop */
+  var visible=true;
+  if("IntersectionObserver" in window){
+    new IntersectionObserver(function(en){ visible=en[0].isIntersecting; },{threshold:0.02}).observe(stage);
+  }
+  var v = new THREE.Vector3();
+  function updateHots(){
+    for(var i=0;i<hotspots.length;i++){
+      var h=hotspots[i]; v.copy(h.pos); bolt.localToWorld(v); v.project(camera);
+      var vis = v.z < 1;
+      h.el.style.display = vis ? "block" : "none";
+      if(vis){ h.el.style.left=((v.x*0.5+0.5)*stage.clientWidth)+"px"; h.el.style.top=((-v.y*0.5+0.5)*stage.clientHeight)+"px"; }
+    }
+  }
+  function animate(){
+    requestAnimationFrame(animate);
+    if(!visible) return;
+    if(autoRot) targetY += 0.0035;
+    pivot.rotation.y += (targetY - pivot.rotation.y)*0.10;
+    bolt.rotation.x  += (targetX - bolt.rotation.x)*0.10;
+    renderer.render(scene,camera);
+    updateHots();
+  }
+  animate();
+
+  function resize3d(){
+    var w=stage.clientWidth, h=stage.clientHeight; if(!w||!h) return;
+    camera.aspect=w/h; camera.updateProjectionMatrix(); renderer.setSize(w,h);
+  }
+  window.addEventListener("resize", resize3d);
+  if(window.ResizeObserver){ new ResizeObserver(resize3d).observe(stage); }
+  resize3d();
+})();
+</script>
+</body>
+</html>
