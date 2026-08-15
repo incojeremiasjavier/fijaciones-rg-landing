@@ -1,0 +1,41 @@
+# ============================================================================
+# Fijaciones RG — configuración de Netlify (sitio estático, sin build)
+# Headers de seguridad + caché. Ajustados a los recursos reales del sitio:
+#   Google Fonts · Pexels (imágenes) · cdnjs (Three.js) · api.web3forms.com (form)
+# ============================================================================
+
+[build]
+  publish = "."
+
+# ---------------------------------------------------------------------------
+# Cabeceras de seguridad para TODO el sitio
+# ---------------------------------------------------------------------------
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=(), payment=()"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+    # CSP a medida. Si activas Google Analytics (GA4), añade a script-src y connect-src:
+    #   https://www.googletagmanager.com  https://www.google-analytics.com
+    Content-Security-Policy = "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; img-src 'self' data: https://images.pexels.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; connect-src 'self' https://api.web3forms.com; form-action 'self' https://api.web3forms.com; frame-src 'self'"
+
+# ---------------------------------------------------------------------------
+# Caché: HTML siempre fresco; imágenes e íconos con caché largo
+# ---------------------------------------------------------------------------
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/og-fijaciones-rg.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000, immutable"
+
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"

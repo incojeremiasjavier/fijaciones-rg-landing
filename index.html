@@ -6,8 +6,10 @@
 <title>Fijaciones RG · Abrazaderas y anclajes de grado industrial</title>
 <meta name="description" content="Torneria y fijaciones. Fabricamos, cortamos y roscamos a pedido. Abrazaderas y anclajes con stock inmediato, despacho propio y facturacion formal. Entrega 24-48h en Santiago." />
 
-<!-- ► SUPUESTO: reemplaza el dominio real cuando publiques -->
-<link rel="canonical" href="https://fijacionesrg.cl/" />
+<!-- ► DOMINIO: hoy apunta a la URL viva de Netlify (preview de WhatsApp funciona).
+     Al conectar el dominio final, reemplaza en todo el repo:
+     https://fijaciones-rg-landing.netlify.app  ->  https://tu-dominio.cl -->
+<link rel="canonical" href="https://fijaciones-rg-landing.netlify.app/" />
 <meta name="robots" content="index,follow" />
 <meta name="theme-color" content="#0E0F12" />
 <meta name="author" content="Fijaciones RG" />
@@ -23,9 +25,13 @@
 <meta property="og:site_name" content="Fijaciones RG" />
 <meta property="og:title" content="Fijaciones RG · Abrazaderas y anclajes de grado industrial" />
 <meta property="og:description" content="Fabricamos, cortamos y roscamos a pedido. Stock inmediato, despacho propio y factura desde el primer pedido. Entrega 24–48h en Santiago." />
-<meta property="og:url" content="https://fijacionesrg.cl/" />
-<meta property="og:image" content="https://fijacionesrg.cl/og-fijaciones-rg.jpg" />
+<meta property="og:url" content="https://fijaciones-rg-landing.netlify.app/" />
+<meta property="og:image" content="https://fijaciones-rg-landing.netlify.app/og-fijaciones-rg.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Fijaciones RG — Abrazaderas y anclajes de grado industrial" />
 <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://fijaciones-rg-landing.netlify.app/og-fijaciones-rg.jpg" />
 <meta name="twitter:title" content="Fijaciones RG · Abrazaderas y anclajes de grado industrial" />
 <meta name="twitter:description" content="Stock inmediato, despacho propio y factura desde el primer pedido. Entrega 24–48h en Santiago." />
 
@@ -644,10 +650,12 @@
   .mfooter__word:hover span{ background:linear-gradient(180deg, var(--gold-bright), var(--gold)); -webkit-background-clip:text; background-clip:text; }
   .mfooter__cols{ position:relative; z-index:2; display:grid; grid-template-columns:1.6fr 1fr 1fr 1fr; gap:36px; padding:40px 0; }
   .mfooter__cols .desc{ color:#868c96; font-size:14px; margin-top:16px; max-width:34ch; }
-  .mfcol h4{ font-family:var(--font-mono); font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:#6b7078; margin-bottom:16px; }
+  .mfcol .mfcol-t{ font-family:var(--font-mono); font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:#9AA1AC; margin-bottom:16px; }
   .mfcol a{ display:block; color:#b6bcc6; font-size:14px; margin-bottom:11px; transition:color .2s, transform .2s; }
   .mfcol a:hover{ color:var(--gold); transform:translateX(4px); }
-  .mfoot-bottom{ position:relative; z-index:2; padding:24px 0 40px; display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; font-size:12.5px; color:#5f6672; font-family:var(--font-mono); border-top:1px solid var(--steel); }
+  .mfoot-bottom{ position:relative; z-index:2; padding:24px 0 40px; display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; font-size:12.5px; color:#9AA1AC; font-family:var(--font-mono); border-top:1px solid var(--steel); }
+  .mfoot-bottom a{ color:#C7CCD4; text-decoration:underline; text-underline-offset:2px; }
+  .mfoot-bottom a:hover{ color:var(--gold); }
 
   /* ============================================================
      AI CHAT ASSISTANT
@@ -765,8 +773,8 @@
   "@type": "HardwareStore",
   "name": "Fijaciones RG",
   "description": "Tornería y fijaciones. Abrazaderas, anclajes, hilos y cortes a pedido con stock inmediato, despacho propio y factura desde el primer pedido.",
-  "image": "https://fijacionesrg.cl/og-fijaciones-rg.jpg",
-  "url": "https://fijacionesrg.cl/",
+  "image": "https://fijaciones-rg-landing.netlify.app/og-fijaciones-rg.jpg",
+  "url": "https://fijaciones-rg-landing.netlify.app/",
   "email": "fijaciones.rg@gmail.com",
   "telephone": "+56920488227",
   "priceRange": "$$",
@@ -790,6 +798,22 @@
   ]
 }
 </script>
+
+<!-- ============================================================
+     ANALYTICS (GA4) — LISTO PARA ACTIVAR
+     1) Crea una propiedad GA4 en https://analytics.google.com y copia tu ID (G-XXXXXXX).
+     2) Reemplaza G-XXXXXXXXXX por tu ID (2 lugares) y descomenta este bloque.
+     3) Recuerda extender el Content-Security-Policy en netlify.toml
+        (añadir googletagmanager.com y google-analytics.com).
+     Nota: por privacidad (Ley 19.628), si activas analítica conviene un aviso de cookies.
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+     ============================================================ -->
 </head>
 <body>
 
@@ -808,7 +832,7 @@
   </div>
   <div class="headmain">
     <div class="wrap">
-      <a class="brand" href="#top" aria-label="Fijaciones RG, inicio">
+      <a class="brand" href="#top">
         <span class="brand__mark" aria-hidden="true">
           <!-- socket-cap bolt-head mark -->
           <svg viewBox="0 0 32 32" fill="none">
@@ -866,6 +890,7 @@
 
 <span id="top"></span>
 
+<main id="contenido">
 <!-- ============================ HERO ============================ -->
 <section class="band hero">
   <div class="wrap">
@@ -1323,6 +1348,8 @@
 </section>
 
 <!-- ============================ FOOTER ============================ -->
+</main>
+
 <footer class="mfooter" id="site-footer">
   <div class="mfooter__cta reveal">
     <h2>¿Listo para <em>cotizar sin vueltas</em>?</h2>
@@ -1334,7 +1361,7 @@
   <div class="wrap">
     <div class="mfooter__cols">
       <div>
-        <a class="brand" href="#top" aria-label="Fijaciones RG, inicio">
+        <a class="brand" href="#top">
           <span class="brand__mark" aria-hidden="true">
             <svg viewBox="0 0 32 32" fill="none">
               <path d="M16 2.6 27 9 V23 L16 29.4 5 23 V9 Z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
@@ -1347,28 +1374,28 @@
         <p class="desc">Fabricación y venta de fijaciones industriales. Abrazaderas, anclajes, hilos y cortes a pedido con despacho propio en Santiago.</p>
       </div>
       <div class="mfcol">
-        <h4>Productos</h4>
+        <p class="mfcol-t">Productos</p>
         <a href="#productos">Abrazaderas</a>
         <a href="#productos">Anclajes</a>
         <a href="#modelo">Modelo 3D</a>
         <a href="planes.html">Planes</a>
       </div>
       <div class="mfcol">
-        <h4>Servicios</h4>
+        <p class="mfcol-t">Servicios</p>
         <a href="#servicios">Hilos a pedido</a>
         <a href="#servicios">Cortes a medida</a>
         <a href="#servicios">Fabricación</a>
         <a href="blog.html">Blog</a>
       </div>
       <div class="mfcol">
-        <h4>Contacto</h4>
+        <p class="mfcol-t">Contacto</p>
         <a href="https://wa.me/56920488227" target="_blank" rel="noopener">WhatsApp +56 9 2048 8227</a>
         <a href="mailto:fijaciones.rg@gmail.com">fijaciones.rg@gmail.com</a>
         <a href="#cotizar">Pedir cotización</a>
       </div>
     </div>
     <div class="mfoot-bottom">
-      <span>© 2026 Fijaciones RG · Sitio de demostración</span>
+      <span>© 2026 Fijaciones RG · Todos los derechos reservados · <a href="privacidad.html">Política de privacidad</a></span>
       <span>Independencia · Santiago · Chile</span>
     </div>
   </div>
@@ -1396,33 +1423,33 @@
 </div>
 
 <!-- ============================ FLOATING DOCK ============================ -->
-<div class="dock-shell" aria-label="Acciones rápidas">
+<div class="dock-shell" role="toolbar" aria-label="Acciones rápidas">
   <div class="dock" id="dock">
-    <a class="dock-item dock-item--cta" href="#cotizar" data-tip="Cotizar">
+    <a class="dock-item dock-item--cta" href="#cotizar" data-tip="Cotizar" aria-label="Cotizar">
       <span class="dock-item__tip">Cotizar</span>
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h10M4 18h7"/></svg>
     </a>
-    <a class="dock-item" href="https://wa.me/56920488227" target="_blank" rel="noopener" data-tip="WhatsApp">
+    <a class="dock-item" href="https://wa.me/56920488227" target="_blank" rel="noopener" data-tip="WhatsApp" aria-label="Escríbenos por WhatsApp">
       <span class="dock-item__tip">WhatsApp</span>
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 21l2.2-5.3A8.5 8.5 0 1 1 21 11.5z"/><path d="M8.5 9.5c0 3 2 5 5 5 .8 0 1.4-.9 1-1.6l-1-.6-1.2.8c-1-.4-1.8-1.2-2.2-2.2l.8-1.2-.6-1c-.7-.4-1.6.2-1.6 1z"/></svg>
     </a>
-    <a class="dock-item" href="mailto:fijaciones.rg@gmail.com" data-tip="Correo">
+    <a class="dock-item" href="mailto:fijaciones.rg@gmail.com" data-tip="Correo" aria-label="Escríbenos por correo">
       <span class="dock-item__tip">Correo</span>
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
     </a>
     <span class="dock-sep"></span>
-    <a class="dock-item" href="#productos" data-tip="Catálogo">
+    <a class="dock-item" href="#productos" data-tip="Catálogo" aria-label="Ver catálogo">
       <span class="dock-item__tip">Catálogo</span>
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v14H4z"/><path d="M8 5v14M4 9h4M4 13h4"/></svg>
     </a>
-    <a class="dock-item" href="#top" data-tip="Inicio">
+    <a class="dock-item" href="#top" data-tip="Inicio" aria-label="Volver al inicio">
       <span class="dock-item__tip">Inicio</span>
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/></svg>
     </a>
   </div>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<!-- Three.js se carga de forma diferida (lazy) desde el visor 3D, no en el load inicial. -->
 <script>
 (function(){
   "use strict";
@@ -1755,9 +1782,37 @@
   if(!stage) return;
   var fallback = document.getElementById("m3dFallback");
   var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  var THREE = window.THREE;
-  if(!THREE){ if(fallback) fallback.classList.add("show"); return; }
 
+  /* Lazy-load: Three.js (~600KB) y el render WebGL se cargan SOLO cuando el visor 3D
+     entra en viewport. Antes corría en el load inicial y bloqueaba ~2s el hilo
+     principal (TBT). Ahora la home carga liviana y el 3D se activa al hacer scroll. */
+  var booted = false;
+  function loadThree(cb){
+    if(window.THREE) return cb(window.THREE);
+    var s = document.createElement("script");
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js";
+    s.async = true;
+    s.onload  = function(){ cb(window.THREE || null); };
+    s.onerror = function(){ cb(null); };
+    document.head.appendChild(s);
+  }
+  function boot(){
+    if(booted) return; booted = true;
+    loadThree(function(THREE){
+      if(!THREE){ if(fallback) fallback.classList.add("show"); return; }
+      start(THREE);
+    });
+  }
+  if("IntersectionObserver" in window){
+    var io = new IntersectionObserver(function(entries){
+      for(var i=0;i<entries.length;i++){
+        if(entries[i].isIntersecting){ io.disconnect(); boot(); break; }
+      }
+    }, {rootMargin:"300px 0px"});
+    io.observe(stage);
+  } else { boot(); }
+
+  function start(THREE){
   var W = stage.clientWidth || 480, H = stage.clientHeight || 480;
   var scene = new THREE.Scene();
   var camera = new THREE.PerspectiveCamera(38, W/H, 0.1, 100);
@@ -1921,6 +1976,7 @@
   window.addEventListener("resize", resize3d);
   if(window.ResizeObserver){ new ResizeObserver(resize3d).observe(stage); }
   resize3d();
+  } /* end start() — cuerpo del visor 3D, invocado por boot() al entrar en viewport */
 })();
 </script>
 </body>

@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Nota interna de auditoría, no indexar
+Disallow: /AUDIT-LANDING-RG.md
+
+Sitemap: https://fijaciones-rg-landing.netlify.app/sitemap.xml

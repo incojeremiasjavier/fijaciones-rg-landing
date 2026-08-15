@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Página no encontrada · Fijaciones RG</title>
+<meta name="robots" content="noindex,follow" />
+<meta name="theme-color" content="#0E0F12" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230E0F12'/><path d='M16,4L26,9.5L26,22.5L16,28L6,22.5L6,9.5Z' fill='none' stroke='%23C9A24E' stroke-width='2' stroke-linejoin='round'/><path d='M16,10L21.5,13L21.5,19L16,22L10.5,19L10.5,13Z' fill='%23C9A24E'/></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  :root{--gold:#C9A24E;--blueprint:#8098B2;--muted:#9AA1AC;
+    --font-display:"Archivo","Segoe UI",system-ui,sans-serif;--font-mono:"IBM Plex Mono",ui-monospace,monospace}
+  body{font-family:var(--font-display);background:#0E0F12;color:#F3F1EA;min-height:100vh;
+    display:grid;place-items:center;text-align:center;padding:24px;overflow:hidden;position:relative}
+  .grid{position:absolute;inset:0;z-index:0;pointer-events:none;
+    background-image:linear-gradient(rgba(128,152,178,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(128,152,178,.06) 1px,transparent 1px);
+    background-size:44px 44px;mask-image:radial-gradient(120% 90% at 50% 30%,#000 30%,transparent 80%)}
+  .box{position:relative;z-index:1;max-width:520px}
+  .code{font-family:var(--font-mono);font-size:clamp(72px,18vw,140px);font-weight:500;line-height:1;color:var(--gold);letter-spacing:-.02em}
+  .eyebrow{font-family:var(--font-mono);font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--blueprint);margin-bottom:8px}
+  h1{font-weight:800;font-size:clamp(24px,4vw,34px);letter-spacing:-.02em;margin:18px 0 10px}
+  p{color:var(--muted);font-size:16px;max-width:42ch;margin:0 auto 28px}
+  .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .btn{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:15px;padding:13px 22px;border-radius:4px;border:1px solid transparent;transition:transform .18s,background .2s,border-color .2s,color .2s;cursor:pointer}
+  .btn--primary{background:var(--gold);color:#14140E}
+  .btn--primary:hover{background:#E7C579;transform:translateY(-2px)}
+  .btn--ghost{border-color:rgba(255,255,255,.16);color:#F3F1EA}
+  .btn--ghost:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-2px)}
+  a{text-decoration:none;color:inherit}
+</style>
+</head>
+<body>
+  <div class="grid"></div>
+  <div class="box">
+    <div class="eyebrow">Error 404</div>
+    <div class="code">404</div>
+    <h1>Esta pieza no está en góndola</h1>
+    <p>La página que buscas no existe o cambió de lugar. Volvamos a terreno conocido.</p>
+    <div class="btns">
+      <a class="btn btn--primary" href="/">Volver al inicio</a>
+      <a class="btn btn--ghost" href="https://wa.me/56920488227" target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
+    </div>
+  </div>
+</body>
+</html>
