@@ -6,7 +6,8 @@
 <title>Página no encontrada · Marco Gaete</title>
 <meta name="robots" content="noindex,follow" />
 <meta name="theme-color" content="#0E0F12" />
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230E0F12'/><path d='M16,4L26,9.5L26,22.5L16,28L6,22.5L6,9.5Z' fill='none' stroke='%23C9A24E' stroke-width='2' stroke-linejoin='round'/><path d='M16,10L21.5,13L21.5,19L16,22L10.5,19L10.5,13Z' fill='%23C9A24E'/></svg>" />
+<link rel="icon" href="marca/favicon-32.png" type="image/png" />
+<link rel="apple-touch-icon" href="marca/favicon-180.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -42,8 +43,35 @@
     <p>La página que buscas no existe o cambió de lugar. Volvamos a terreno conocido.</p>
     <div class="btns">
       <a class="btn btn--primary" href="/">Volver al inicio</a>
-      <a class="btn btn--ghost" href="tel:+56226466405" target="_blank" rel="noopener">Escríbenos por teléfono</a>
+      <a class="btn btn--ghost" href="https://wa.me/56931278297?text=Hola%2C%20quiero%20cotizar" data-wa="cotizar" target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
     </div>
   </div>
+<!-- CTA WIRING (WhatsApp + correo) -->
+<script>
+(function(){
+  "use strict";
+  var WA = "https://wa.me/56931278297";
+  var MSG = {
+    cotizar:  "¡Hola Marco Gaete! 👋 Encontré su sitio web y quiero cotizar. ¿Me ayudan con precio, stock y plazo de entrega? 🙌",
+    despacho: "¡Hola Marco Gaete! 👋 Quiero coordinar un despacho (24–48 h en Santiago). Les paso mi comuna y lo que necesito. 🚚",
+    lote:     "¡Hola Marco Gaete! 👋 Necesito comprar por volumen / lote y me interesa precio especial. Les detallo producto, medida y cantidad. 📦",
+    servicio: "¡Hola Marco Gaete! 👋 Necesito corte a medida o hilo a pedido. Les mando las medidas y el material para cotizar. 🛠️",
+    producto: "¡Hola Marco Gaete! 👋 Vi un producto en su web y quiero cotizarlo. ¿Me confirman precio, stock y plazo? 🙌"
+  };
+  document.querySelectorAll("[data-wa]").forEach(function(a){
+    var k = a.getAttribute("data-wa") || "cotizar";
+    a.href = WA + "?text=" + encodeURIComponent(MSG[k] || MSG.cotizar);
+    a.target = "_blank"; a.rel = "noopener";
+  });
+  function gmail(to, su, body){ return "https://mail.google.com/mail/?view=cm&fs=1&to=" + encodeURIComponent(to) + "&su=" + encodeURIComponent(su) + "&body=" + encodeURIComponent(body); }
+  var ESU = "Cotización web — Marco Gaete";
+  var EBODY = "Hola Marco Gaete, quiero cotizar:\n\n- Producto: \n- Medida / grado: \n- Cantidad: \n- Comuna de despacho: \n\n¡Gracias!";
+  document.querySelectorAll("[data-mail]").forEach(function(a){
+    var to = a.getAttribute("data-mail") || "ventas.mgaete@gmail.com";
+    a.href = gmail(to, ESU, EBODY); a.target = "_blank"; a.rel = "noopener";
+  });
+})();
+</script>
+
 </body>
 </html>

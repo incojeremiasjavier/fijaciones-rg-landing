@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kit de marca · Marco Gaete</title>
+<meta name="description" content="Logo, isotipo, favicon, paleta y tipografía de Marco Gaete — Fijaciones y Anclajes. Descarga los archivos oficiales en SVG y PNG." />
+<meta name="robots" content="noindex,follow" />
+<meta name="theme-color" content="#0E0F12" />
+<link rel="icon" href="marca/favicon-32.png" type="image/png" />
+<link rel="apple-touch-icon" href="marca/favicon-180.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --ink:#0E0F12; --surface:#16181D; --surface-2:#1E212A; --steel:#2A2E38;
+    --red:#D13B2B; --red-bright:#EC5A4C; --blueprint:#8A93A1;
+    --fg:#F2F4F6; --muted:#9AA1AC; --border:rgba(255,255,255,.10); --border-str:rgba(255,255,255,.18);
+    --maxw:1080px; --radius:6px; --ease:cubic-bezier(.22,.61,.36,1);
+    --fd:"Archivo","Segoe UI",system-ui,sans-serif; --fm:"IBM Plex Mono","Consolas",monospace;
+  }
+  *,*::before,*::after{ box-sizing:border-box; margin:0; padding:0; }
+  body{ font-family:var(--fd); background:var(--ink); color:var(--fg); line-height:1.55; -webkit-font-smoothing:antialiased; }
+  a{ color:inherit; text-decoration:none; }
+  img,svg{ display:block; max-width:100%; }
+  .wrap{ width:100%; max-width:var(--maxw); margin-inline:auto; padding-inline:24px; }
+  .mono{ font-family:var(--fm); }
+  header.top{ position:sticky; top:0; z-index:10; background:rgba(14,15,18,.9); backdrop-filter:blur(12px); border-bottom:1px solid var(--steel); }
+  header.top .wrap{ display:flex; align-items:center; justify-content:space-between; padding-block:14px; }
+  .brand{ display:flex; align-items:center; gap:12px; }
+  .brand__mark{ width:38px; height:38px; }
+  .brand__name{ font-weight:800; font-size:17px; } .brand__name b{ color:var(--red); }
+  .brand__tag{ display:block; font-family:var(--fm); font-size:10px; letter-spacing:.16em; color:var(--blueprint); text-transform:uppercase; margin-top:-2px; }
+  .back{ font-family:var(--fm); font-size:13px; color:var(--muted); } .back:hover{ color:var(--red); }
+  .hero{ padding:72px 0 40px; border-bottom:1px solid var(--steel); }
+  .eyebrow{ font-family:var(--fm); font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--red); }
+  h1{ font-size:clamp(34px,6vw,56px); font-weight:900; letter-spacing:-.02em; line-height:1.02; margin:14px 0 14px; }
+  .hero p{ color:var(--muted); max-width:60ch; font-size:17px; }
+  section.block{ padding:52px 0; border-bottom:1px solid var(--steel); }
+  h2{ font-size:13px; font-family:var(--fm); letter-spacing:.14em; text-transform:uppercase; color:var(--blueprint); margin-bottom:26px; }
+  .logo-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:18px; }
+  .logo-card{ border:1px solid var(--border); border-radius:var(--radius); overflow:hidden; }
+  .logo-stage{ padding:40px 28px; display:grid; place-items:center; min-height:160px; }
+  .logo-stage--light{ background:#ECEEF1; } .logo-stage--dark{ background:#111317; }
+  .logo-stage img{ width:min(300px,80%); }
+  .logo-stage--iso img{ width:96px; } .logo-stage--fav img{ width:88px; }
+  .logo-foot{ padding:14px 18px; display:flex; align-items:center; justify-content:space-between; gap:10px; background:var(--surface); border-top:1px solid var(--border); flex-wrap:wrap; }
+  .logo-foot b{ font-size:14px; font-weight:600; } .logo-foot span{ font-family:var(--fm); font-size:11px; color:var(--muted); }
+  .dls{ display:flex; gap:8px; }
+  .dl{ font-family:var(--fm); font-size:11.5px; letter-spacing:.04em; text-transform:uppercase; padding:7px 12px; border:1px solid var(--border-str); border-radius:4px; color:var(--fg); transition:.18s var(--ease); }
+  .dl:hover{ border-color:var(--red); color:var(--red); transform:translateY(-1px); }
+  .dl--solid{ background:var(--red); border-color:var(--red); color:#fff; } .dl--solid:hover{ background:var(--red-bright); border-color:var(--red-bright); color:#fff; }
+  .pal{ display:grid; grid-template-columns:repeat(4,1fr); gap:14px; }
+  .sw{ border:1px solid var(--border); border-radius:var(--radius); overflow:hidden; }
+  .sw__c{ height:92px; } .sw__m{ padding:12px 14px; background:var(--surface); }
+  .sw__n{ font-size:13.5px; font-weight:600; } .sw__h{ font-family:var(--fm); font-size:12px; color:var(--muted); margin-top:2px; }
+  .type-row{ display:grid; grid-template-columns:140px 1fr; gap:20px; align-items:baseline; padding:22px 0; border-top:1px solid var(--border); }
+  .type-row:first-child{ border-top:0; }
+  .type-k{ font-family:var(--fm); font-size:12px; letter-spacing:.1em; text-transform:uppercase; color:var(--blueprint); }
+  .type-sample-dsp{ font-weight:900; font-size:34px; letter-spacing:-.02em; }
+  .type-sample-txt{ font-weight:400; font-size:19px; }
+  .type-meta{ font-family:var(--fm); font-size:12.5px; color:var(--muted); margin-top:6px; }
+  .rules{ display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+  .rule{ border:1px solid var(--border); border-radius:var(--radius); padding:20px 22px; background:var(--surface); }
+  .rule h3{ font-size:15px; display:flex; align-items:center; gap:9px; margin-bottom:8px; }
+  .rule p{ color:var(--muted); font-size:14px; }
+  .dot{ width:9px; height:9px; border-radius:50%; flex:none; } .dot--ok{ background:#4ea36b; } .dot--no{ background:var(--red); }
+  footer{ padding:40px 0 60px; } footer p{ color:var(--muted); font-family:var(--fm); font-size:12.5px; }
+  @media (max-width:720px){ .logo-grid,.pal,.rules{ grid-template-columns:1fr; } .pal{ grid-template-columns:repeat(2,1fr); } .type-row{ grid-template-columns:1fr; gap:8px; } }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img class="brand__mark" src="marca/mg-chip.png" alt="" style="border-radius:7px">
+      <span><span class="brand__name">Marco <b>Gaete</b></span><span class="brand__tag">Fijaciones · Anclajes</span></span>
+    </a>
+    <a class="back" href="index.html">← Volver al sitio</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Identidad visual</span>
+    <h1>Kit de marca<br>Marco Gaete</h1>
+    <p>El logo (monograma MG con perno y tuerca), el favicon, los colores y las tipografías oficiales. Descárgalos en PNG de alta resolución para la firma de correo, WhatsApp, redes e imprenta.</p>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <h2>Logo e isotipo</h2>
+    <div class="logo-grid">
+      <div class="logo-card">
+        <div class="logo-stage logo-stage--light"><img src="marca/logo-horizontal-fondo-claro.png" alt="Logo Marco Gaete sobre fondo claro"></div>
+        <div class="logo-foot">
+          <div><b>Logo horizontal</b><br><span>Fondo claro</span></div>
+          <div class="dls"><a class="dl dl--solid" href="marca/logo-horizontal-fondo-claro.png" download>PNG</a></div>
+        </div>
+      </div>
+      <div class="logo-card">
+        <div class="logo-stage logo-stage--dark"><img src="marca/logo-horizontal-fondo-oscuro.png" alt="Logo Marco Gaete sobre fondo oscuro"></div>
+        <div class="logo-foot">
+          <div><b>Logo horizontal</b><br><span>Fondo oscuro</span></div>
+          <div class="dls"><a class="dl dl--solid" href="marca/logo-horizontal-fondo-oscuro.png" download>PNG</a></div>
+        </div>
+      </div>
+      <div class="logo-card">
+        <div class="logo-stage logo-stage--light logo-stage--iso"><img src="marca/isotipo-marco-gaete.png" alt="Monograma MG Marco Gaete"></div>
+        <div class="logo-foot">
+          <div><b>Monograma MG</b><br><span>El símbolo solo</span></div>
+          <div class="dls"><a class="dl dl--solid" href="marca/isotipo-marco-gaete.png" download>PNG rojo</a><a class="dl" href="marca/mg-white.png" download>Blanco</a></div>
+        </div>
+      </div>
+      <div class="logo-card">
+        <div class="logo-stage logo-stage--dark logo-stage--fav"><img src="marca/favicon-180.png" alt="Favicon Marco Gaete"></div>
+        <div class="logo-foot">
+          <div><b>Favicon / app icon</b><br><span>Pestaña y pantalla de inicio</span></div>
+          <div class="dls"><a class="dl dl--solid" href="marca/favicon-180.png" download>180</a><a class="dl" href="marca/favicon-512.png" download>512</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <h2>Paleta</h2>
+    <div class="pal">
+      <div class="sw"><div class="sw__c" style="background:#D13B2B"></div><div class="sw__m"><div class="sw__n">Rojo industrial</div><div class="sw__h">#D13B2B</div></div></div>
+      <div class="sw"><div class="sw__c" style="background:#EC5A4C"></div><div class="sw__m"><div class="sw__n">Rojo vivo</div><div class="sw__h">#EC5A4C</div></div></div>
+      <div class="sw"><div class="sw__c" style="background:#15171C"></div><div class="sw__m"><div class="sw__n">Grafito</div><div class="sw__h">#15171C</div></div></div>
+      <div class="sw"><div class="sw__c" style="background:#2A2E38"></div><div class="sw__m"><div class="sw__n">Acero</div><div class="sw__h">#2A2E38</div></div></div>
+      <div class="sw"><div class="sw__c" style="background:#8A93A1"></div><div class="sw__m"><div class="sw__n">Azulado</div><div class="sw__h">#8A93A1</div></div></div>
+      <div class="sw"><div class="sw__c" style="background:#ECEEF1"></div><div class="sw__m"><div class="sw__n">Niebla</div><div class="sw__h">#ECEEF1</div></div></div>
+      <div class="sw"><div class="sw__c" style="background:#F2F4F6"></div><div class="sw__m"><div class="sw__n">Blanco humo</div><div class="sw__h">#F2F4F6</div></div></div>
+      <div class="sw"><div class="sw__c" style="background:#0E0F12"></div><div class="sw__m"><div class="sw__n">Tinta</div><div class="sw__h">#0E0F12</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <h2>Tipografía</h2>
+    <div class="type-row">
+      <div class="type-k">Titulares</div>
+      <div>
+        <div class="type-sample-dsp">Archivo Black · 800/900</div>
+        <div class="type-meta">Google Fonts · "Archivo" — para títulos, el nombre y cifras grandes.</div>
+      </div>
+    </div>
+    <div class="type-row">
+      <div class="type-k">Texto</div>
+      <div>
+        <div class="type-sample-txt">Archivo Regular y Medium para párrafos, descripciones de producto y botones.</div>
+        <div class="type-meta">Google Fonts · "Archivo" 400–600.</div>
+      </div>
+    </div>
+    <div class="type-row">
+      <div class="type-k">Datos / código</div>
+      <div>
+        <div class="type-sample-txt mono">IBM Plex Mono · Ø 3/8" · M12 · Gr. 8.8 · KIT-ABZ-38</div>
+        <div class="type-meta">Google Fonts · "IBM Plex Mono" — medidas, códigos y etiquetas técnicas.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <h2>Uso correcto</h2>
+    <div class="rules">
+      <div class="rule"><h3><span class="dot dot--ok"></span>Sí</h3><p>Deja aire alrededor del logo (al menos el ancho de una letra). Usa la versión de fondo claro sobre superficies claras y la de fondo oscuro sobre grafito o fotos oscuras.</p></div>
+      <div class="rule"><h3><span class="dot dot--ok"></span>Sí</h3><p>Para la firma de correo, WhatsApp o avatar usa los PNG. El monograma MG (o el chip rojo) funciona solo como ícono cuando no cabe el nombre completo.</p></div>
+      <div class="rule"><h3><span class="dot dot--no"></span>No</h3><p>No cambies los colores del logo, no lo estires ni lo deformes, y no lo pongas sobre fondos que dejen el rojo sin contraste.</p></div>
+      <div class="rule"><h3><span class="dot dot--no"></span>No</h3><p>No reconstruyas el nombre con otra tipografía ni agregues sombras o contornos. Usa siempre los archivos oficiales de este kit.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Marco Gaete · Fijaciones y Anclajes · Independencia, Santiago. Kit de marca para uso interno y de proveedores.</p>
+  </div>
+</footer>
+<!-- CTA WIRING (WhatsApp + correo) -->
+<script>
+(function(){
+  "use strict";
+  var WA = "https://wa.me/56931278297";
+  var MSG = {
+    cotizar:  "¡Hola Marco Gaete! 👋 Encontré su sitio web y quiero cotizar. ¿Me ayudan con precio, stock y plazo de entrega? 🙌",
+    despacho: "¡Hola Marco Gaete! 👋 Quiero coordinar un despacho (24–48 h en Santiago). Les paso mi comuna y lo que necesito. 🚚",
+    lote:     "¡Hola Marco Gaete! 👋 Necesito comprar por volumen / lote y me interesa precio especial. Les detallo producto, medida y cantidad. 📦",
+    servicio: "¡Hola Marco Gaete! 👋 Necesito corte a medida o hilo a pedido. Les mando las medidas y el material para cotizar. 🛠️",
+    producto: "¡Hola Marco Gaete! 👋 Vi un producto en su web y quiero cotizarlo. ¿Me confirman precio, stock y plazo? 🙌"
+  };
+  document.querySelectorAll("[data-wa]").forEach(function(a){
+    var k = a.getAttribute("data-wa") || "cotizar";
+    a.href = WA + "?text=" + encodeURIComponent(MSG[k] || MSG.cotizar);
+    a.target = "_blank"; a.rel = "noopener";
+  });
+  function gmail(to, su, body){ return "https://mail.google.com/mail/?view=cm&fs=1&to=" + encodeURIComponent(to) + "&su=" + encodeURIComponent(su) + "&body=" + encodeURIComponent(body); }
+  var ESU = "Cotización web — Marco Gaete";
+  var EBODY = "Hola Marco Gaete, quiero cotizar:\n\n- Producto: \n- Medida / grado: \n- Cantidad: \n- Comuna de despacho: \n\n¡Gracias!";
+  document.querySelectorAll("[data-mail]").forEach(function(a){
+    var to = a.getAttribute("data-mail") || "ventas.mgaete@gmail.com";
+    a.href = gmail(to, ESU, EBODY); a.target = "_blank"; a.rel = "noopener";
+  });
+})();
+</script>
+
+</body>
+</html>

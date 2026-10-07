@@ -1,5 +1,5 @@
 # ============================================================================
-# Fijaciones RG — configuración de Netlify (sitio estático, sin build)
+# Marco Gaete — configuración de Netlify (sitio estático, sin build)
 # Headers de seguridad + caché. Ajustados a los recursos reales del sitio:
 #   Google Fonts · Pexels (imágenes) · cdnjs (Three.js) · api.web3forms.com (form)
 # ============================================================================
@@ -31,7 +31,7 @@
     Cache-Control = "public, max-age=0, must-revalidate"
 
 [[headers]]
-  for = "/og-fijaciones-rg.jpg"
+  for = "/og-marco-gaete.jpg"
   [headers.values]
     Cache-Control = "public, max-age=2592000, immutable"
 
