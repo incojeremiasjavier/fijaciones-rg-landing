@@ -4,4 +4,4 @@ Allow: /
 # Nota interna de auditoría, no indexar
 Disallow: /AUDIT-LANDING.md
 
-Sitemap: https://marco-gaete.netlify.app/sitemap.xml
+Sitemap: https://marcogaete.cl/sitemap.xml

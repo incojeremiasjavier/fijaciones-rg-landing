@@ -69,8 +69,45 @@
   footer{ padding:40px 0 60px; } footer p{ color:var(--muted); font-family:var(--fm); font-size:12.5px; }
   @media (max-width:720px){ .logo-grid,.pal,.rules{ grid-template-columns:1fr; } .pal{ grid-template-columns:repeat(2,1fr); } .type-row{ grid-template-columns:1fr; gap:8px; } }
 </style>
+<style id="fixes-qa">
+/* accesibilidad (auditoría WCAG AA) */
+.pd-info .ey,.cta-band__k,h3 .n,#porque p a{color:#EC5A4C}
+.fbtn[aria-pressed="true"],.dock-item--cta,.dock-item:hover,.msg--user,.msg--user a,.vplay,.chat-fab,.rcard__av,.chat-head__av{color:#fff}
+
+:focus-visible{outline:2px solid #EC5A4C;outline-offset:3px}
+input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid #EC5A4C;outline-offset:1px}
+.skip{position:absolute;left:-9999px;top:0;z-index:200;background:#EC5A4C;color:#fff;padding:10px 16px;border-radius:6px;font-weight:700}
+.skip:focus{left:16px;top:16px}
+html{scroll-padding-bottom:110px}
+.eyebrow,.ey,.brand__name b,.packcard__code,.packcard__cta,.plan__k,.marquee__item b,.topbar__r a{color:#EC5A4C}
+.band--paper .eyebrow,.band--paper .pstep__n,.sec--paper .ey,.mv__k,.tip__k,.pstep__n{color:#B8301F}
+.btn--primary,.plan__badge,.fbtn.active{color:#fff}
+.cat-footer,.cat-footer .wrap,.cat-footer a,#logosClientes i{color:#868d98}
+#porque p a{text-decoration:underline}
+.nav__item:focus-within .dropdown{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0)}
+.dock-item:focus-visible .dock-item__tip{opacity:1;visibility:visible}
+.rev-dot{width:24px!important;height:24px!important;background:none!important;position:relative;border-radius:50%}
+.rev-dot::after{content:"";position:absolute;left:8px;top:8px;width:8px;height:8px;border-radius:50%;background:var(--border-str,#888);transition:all .2s}
+.rev-dot.active::after{background:#D13B2B;left:3px;width:18px;border-radius:4px}
+.rev-pause{background:none;border:1px solid currentColor;border-radius:100px;padding:6px 12px;font:600 12px/1 var(--font-mono,monospace);cursor:pointer;color:inherit;margin-left:8px}
+.req{color:#B8301F}
+
+.brand__mark{overflow:hidden}
+.brand__mark img{width:100%;height:100%;object-fit:contain;display:block}
+.form-ok[hidden]{display:none!important}
+section[id]{scroll-margin-top:96px}
+.pd-media{aspect-ratio:16/10}
+@media (max-width:560px){
+  .back-link{font-size:0;gap:0}
+  .back-link svg{width:20px;height:20px}
+  .brand__name{white-space:nowrap}
+  .hero-stats{display:grid;grid-template-columns:1fr 1fr}
+  .hero-stats .hs{margin-right:0;padding:14px 12px 8px 0;border-right:none;border-bottom:1px solid var(--steel)}
+}
+</style>
 </head>
 <body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
 <header class="top">
   <div class="wrap">
     <a class="brand" href="index.html">
@@ -80,6 +117,7 @@
     <a class="back" href="index.html">← Volver al sitio</a>
   </div>
 </header>
+<main id="contenido">
 
 <section class="hero">
   <div class="wrap">
@@ -180,9 +218,11 @@
   </div>
 </section>
 
+</main>
+
 <footer>
   <div class="wrap">
-    <p>Marco Gaete · Fijaciones y Anclajes · Independencia, Santiago. Kit de marca para uso interno y de proveedores.</p>
+    <p>Marco Gaete · Fijaciones y Anclajes · 3 de Mayo 2595, Independencia, Santiago. Kit de marca para uso interno y de proveedores.</p>
   </div>
 </footer>
 <!-- CTA WIRING (WhatsApp + correo) -->
@@ -191,11 +231,11 @@
   "use strict";
   var WA = "https://wa.me/56931278297";
   var MSG = {
-    cotizar:  "¡Hola Marco Gaete! 👋 Encontré su sitio web y quiero cotizar. ¿Me ayudan con precio, stock y plazo de entrega? 🙌",
-    despacho: "¡Hola Marco Gaete! 👋 Quiero coordinar un despacho (24–48 h en Santiago). Les paso mi comuna y lo que necesito. 🚚",
+    cotizar:  "¡Hola Marco Gaete! 👋 Encontré su sitio web y quiero cotizar. ¿Me ayudan con precio, stock y plazo para retiro? 🙌",
+    despacho: "¡Hola Marco Gaete! 👋 Quiero coordinar el retiro de mi pedido en el taller de Independencia. Si es un pedido de volumen, ¿se puede despachar? Les paso el detalle. 🔧",
     lote:     "¡Hola Marco Gaete! 👋 Necesito comprar por volumen / lote y me interesa precio especial. Les detallo producto, medida y cantidad. 📦",
     servicio: "¡Hola Marco Gaete! 👋 Necesito corte a medida o hilo a pedido. Les mando las medidas y el material para cotizar. 🛠️",
-    producto: "¡Hola Marco Gaete! 👋 Vi un producto en su web y quiero cotizarlo. ¿Me confirman precio, stock y plazo? 🙌"
+    producto: "¡Hola Marco Gaete! 👋 Vi un producto en su web y quiero cotizarlo. ¿Me confirman precio, stock y cuándo lo puedo retirar? 🙌"
   };
   document.querySelectorAll("[data-wa]").forEach(function(a){
     var k = a.getAttribute("data-wa") || "cotizar";
@@ -204,7 +244,7 @@
   });
   function gmail(to, su, body){ return "https://mail.google.com/mail/?view=cm&fs=1&to=" + encodeURIComponent(to) + "&su=" + encodeURIComponent(su) + "&body=" + encodeURIComponent(body); }
   var ESU = "Cotización web — Marco Gaete";
-  var EBODY = "Hola Marco Gaete, quiero cotizar:\n\n- Producto: \n- Medida / grado: \n- Cantidad: \n- Comuna de despacho: \n\n¡Gracias!";
+  var EBODY = "Hola Marco Gaete, quiero cotizar:\n\n- Producto: \n- Medida / grado: \n- Cantidad: \n- Retiro en taller o despacho (solo volumen): \n\n¡Gracias!";
   document.querySelectorAll("[data-mail]").forEach(function(a){
     var to = a.getAttribute("data-mail") || "ventas.mgaete@gmail.com";
     a.href = gmail(to, ESU, EBODY); a.target = "_blank"; a.rel = "noopener";

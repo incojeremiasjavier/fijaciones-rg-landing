@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://marco-gaete.netlify.app/</loc>
+    <loc>https://marcogaete.cl/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://marco-gaete.netlify.app/categorias/abrazaderas.html</loc>
+    <loc>https://marcogaete.cl/categorias/abrazaderas.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://marco-gaete.netlify.app/categorias/anclajes.html</loc>
+    <loc>https://marcogaete.cl/categorias/anclajes.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://marco-gaete.netlify.app/planes.html</loc>
+    <loc>https://marcogaete.cl/planes.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://marco-gaete.netlify.app/sobre-nosotros.html</loc>
+    <loc>https://marcogaete.cl/sobre-nosotros.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://marco-gaete.netlify.app/blog.html</loc>
+    <loc>https://marcogaete.cl/blog.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>

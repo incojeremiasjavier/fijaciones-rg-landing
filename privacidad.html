@@ -1,26 +1,11 @@
 <!DOCTYPE html>
-<!--
-  ============================================================================
-  AVISO PARA QUIEN PUBLICA — BORRADOR, NO ES ASESORÍA LEGAL
-  Este documento es un BORRADOR DE TRABAJO generado para acelerar la redacción.
-  NO constituye asesoría legal ni un documento jurídicamente validado.
-  Antes de publicar en producción:
-    1. Debe ser revisado y aprobado por un abogado habilitado en Chile.
-    2. Completar todos los campos marcados [POR COMPLETAR] con datos reales
-       (razón social, RUT, plazos de conservación) — no publicar con placeholders.
-    3. Verificar plazos y referencias contra la normativa vigente (Ley 19.628 y
-       la entrada progresiva de la Ley 21.719).
-  Redactado conforme a los requisitos generales de la Ley 19.628, orientado también
-  a la dirección de la Ley 21.719. No es e-commerce: no incluye derecho a retracto.
-  ============================================================================
--->
 <html lang="es-CL">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Política de privacidad y cookies · Marco Gaete</title>
 <meta name="description" content="Política de privacidad y de cookies de Marco Gaete. Cómo tratamos los datos que nos entregas al cotizar, conforme a la Ley 19.628 de protección de la vida privada." />
-<link rel="canonical" href="https://marco-gaete.netlify.app/privacidad.html" />
+<link rel="canonical" href="https://marcogaete.cl/privacidad.html" />
 <meta name="robots" content="noindex,follow" />
 <meta name="theme-color" content="#0E0F12" />
 <link rel="icon" href="marca/favicon-32.png" type="image/png" />
@@ -98,12 +83,49 @@
   footer.foot a{color:var(--muted)}
   footer.foot a:hover{color:var(--gold)}
 </style>
+<style id="fixes-qa">
+/* accesibilidad (auditoría WCAG AA) */
+.pd-info .ey,.cta-band__k,h3 .n,#porque p a{color:#EC5A4C}
+.fbtn[aria-pressed="true"],.dock-item--cta,.dock-item:hover,.msg--user,.msg--user a,.vplay,.chat-fab,.rcard__av,.chat-head__av{color:#fff}
+
+:focus-visible{outline:2px solid #EC5A4C;outline-offset:3px}
+input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid #EC5A4C;outline-offset:1px}
+.skip{position:absolute;left:-9999px;top:0;z-index:200;background:#EC5A4C;color:#fff;padding:10px 16px;border-radius:6px;font-weight:700}
+.skip:focus{left:16px;top:16px}
+html{scroll-padding-bottom:110px}
+.eyebrow,.ey,.brand__name b,.packcard__code,.packcard__cta,.plan__k,.marquee__item b,.topbar__r a{color:#EC5A4C}
+.band--paper .eyebrow,.band--paper .pstep__n,.sec--paper .ey,.mv__k,.tip__k,.pstep__n{color:#B8301F}
+.btn--primary,.plan__badge,.fbtn.active{color:#fff}
+.cat-footer,.cat-footer .wrap,.cat-footer a,#logosClientes i{color:#868d98}
+#porque p a{text-decoration:underline}
+.nav__item:focus-within .dropdown{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0)}
+.dock-item:focus-visible .dock-item__tip{opacity:1;visibility:visible}
+.rev-dot{width:24px!important;height:24px!important;background:none!important;position:relative;border-radius:50%}
+.rev-dot::after{content:"";position:absolute;left:8px;top:8px;width:8px;height:8px;border-radius:50%;background:var(--border-str,#888);transition:all .2s}
+.rev-dot.active::after{background:#D13B2B;left:3px;width:18px;border-radius:4px}
+.rev-pause{background:none;border:1px solid currentColor;border-radius:100px;padding:6px 12px;font:600 12px/1 var(--font-mono,monospace);cursor:pointer;color:inherit;margin-left:8px}
+.req{color:#B8301F}
+
+.brand__mark{overflow:hidden}
+.brand__mark img{width:100%;height:100%;object-fit:contain;display:block}
+.form-ok[hidden]{display:none!important}
+section[id]{scroll-margin-top:96px}
+.pd-media{aspect-ratio:16/10}
+@media (max-width:560px){
+  .back-link{font-size:0;gap:0}
+  .back-link svg{width:20px;height:20px}
+  .brand__name{white-space:nowrap}
+  .hero-stats{display:grid;grid-template-columns:1fr 1fr}
+  .hero-stats .hs{margin-right:0;padding:14px 12px 8px 0;border-right:none;border-bottom:1px solid var(--steel)}
+}
+</style>
 </head>
 <body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
 
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="index.html" aria-label="Marco Gaete, inicio">
+    <a class="brand" href="index.html">
       <span class="brand__mark" aria-hidden="true">
         <img src="marca/mg-chip.png" alt="Marco Gaete" width="46" height="46" style="border-radius:9px" />
       </span>
@@ -117,11 +139,11 @@
   <div class="wrap">
     <span class="eyebrow">Legal</span>
     <h1>Política de privacidad y de cookies</h1>
-    <p class="updated">Última actualización: 15 de agosto de 2026</p>
+    <p class="updated">Última actualización: 9 de octubre de 2026</p>
   </div>
 </div>
 
-<main class="wrap">
+<main id="contenido" class="wrap">
   <nav class="toc" aria-label="Índice">
     <a href="#privacidad">Política de privacidad</a>
     <a href="#cookies">Política de cookies</a>
@@ -135,7 +157,7 @@
     <p class="sub">Cómo tratamos los datos personales que nos entregas al cotizar o contactarnos, conforme a la Ley N° 19.628 sobre Protección de la Vida Privada.</p>
 
     <h3><span class="n">01</span>Responsable del tratamiento</h3>
-    <p><strong>Marco Gaete</strong> (<span class="fill">[POR COMPLETAR: razón social]</span>, RUT <span class="fill">[POR COMPLETAR]</span>), con domicilio en Independencia, Santiago de Chile, es responsable del tratamiento de los datos personales recolectados a través de este sitio web. Para cualquier consulta o solicitud sobre tus datos, escríbenos a <a class="inline" href="mailto:ventas.mgaete@gmail.com" data-mail="ventas.mgaete@gmail.com">ventas.mgaete@gmail.com</a>.</p>
+    <p><strong>Marco Gaete</strong>, con domicilio en 3 de Mayo 2595, Independencia, Santiago de Chile, es responsable del tratamiento de los datos personales recolectados a través de este sitio web. Para cualquier consulta o solicitud sobre tus datos, escríbenos a <a class="inline" href="mailto:ventas.mgaete@gmail.com" data-mail="ventas.mgaete@gmail.com">ventas.mgaete@gmail.com</a>.</p>
 
     <h3><span class="n">02</span>Qué datos recolectamos</h3>
     <p>Solo recolectamos los datos que tú nos entregas voluntariamente y los datos técnicos mínimos de navegación:</p>
@@ -148,7 +170,7 @@
     <h3><span class="n">03</span>Para qué usamos tus datos</h3>
     <ul>
       <li>Responder tus consultas y preparar tu cotización (precio y plazo).</li>
-      <li>Coordinar el despacho y la facturación de tu pedido.</li>
+      <li>Coordinar el retiro (o despacho, si corresponde) y la facturación de tu pedido.</li>
       <li>Mejorar el sitio a partir de datos de uso agregados y anónimos.</li>
     </ul>
     <p>No usamos tus datos para fines distintos de los aquí descritos ni te enviamos publicidad sin tu consentimiento previo.</p>
@@ -157,13 +179,13 @@
     <p>El formulario de cotización procesa tu envío a través del servicio <strong>Web3Forms</strong>, que reenvía el contenido a nuestro correo. Web3Forms actúa como intermediario técnico del envío y tiene su propia política de privacidad. Las fuentes tipográficas se cargan desde <strong>Google Fonts</strong>, lo que implica que Google puede registrar tu dirección IP al servir esos archivos.</p>
 
     <h3><span class="n">05</span>Base legal y consentimiento</h3>
-    <p>El tratamiento de tus datos se realiza conforme a la Ley N° 19.628. Al enviar el formulario, consientes el tratamiento de tus datos para los fines descritos. <span class="fill">[REVISAR con abogado: ajustar conforme a la entrada progresiva de la Ley N° 21.719, que moderniza la protección de datos en Chile y crea la Agencia de Protección de Datos Personales.]</span></p>
+    <p>El tratamiento de tus datos se realiza conforme a la Ley N° 19.628. Al enviar el formulario, consientes el tratamiento de tus datos para los fines descritos. A medida que entre en vigencia la Ley N° 21.719, que moderniza la protección de datos personales en Chile, ajustaremos esta política a sus exigencias.</p>
 
     <h3><span class="n">06</span>Con quién compartimos tus datos</h3>
     <p>No vendemos ni compartimos tus datos personales con terceros para fines distintos de los descritos. Solo intervienen los proveedores técnicos necesarios para operar el sitio: el servicio de envío de formularios (Web3Forms), el hosting del sitio y, si se activa, una herramienta de analítica de tráfico.</p>
 
     <h3><span class="n">07</span>Seguridad y conservación</h3>
-    <p>El sitio se sirve mediante conexión cifrada (HTTPS) y el acceso a los correos con tus datos está restringido al equipo de Marco Gaete. Conservamos tus datos solo por el tiempo necesario para atender tu solicitud y cumplir obligaciones legales o contables <span class="fill">[POR COMPLETAR: plazo o criterio de conservación]</span>.</p>
+    <p>El sitio se sirve mediante conexión cifrada (HTTPS) y el acceso a los correos con tus datos está restringido al equipo de Marco Gaete. Conservamos tus datos solo por el tiempo necesario para atender tu solicitud y cumplir obligaciones legales o contables. Las solicitudes de cotización que no terminan en compra se eliminan dentro de 12 meses; la información asociada a ventas facturadas se guarda por el plazo que exige la normativa tributaria.</p>
 
     <h3><span class="n">08</span>Menores de edad</h3>
     <p>Este sitio está dirigido a clientes mayores de edad y a empresas. No recolectamos intencionadamente datos de menores; si detectamos datos de un menor sin autorización de su representante legal, los eliminamos.</p>
@@ -178,24 +200,26 @@
     <p>Las cookies son pequeños archivos que un sitio almacena en tu navegador para recordar información sobre tu visita. Algunas son necesarias para el funcionamiento; otras nos ayudan a entender de forma agregada cómo se usa el sitio.</p>
 
     <h3><span class="n">02</span>Categorías que usamos</h3>
-    <div class="tbl-scroll">
+    <div class="tbl-scroll" tabindex="0" role="region" aria-label="Tabla de cookies">
     <table>
       <thead><tr><th>Categoría</th><th>Propósito</th><th>¿Consentimiento?</th></tr></thead>
       <tbody>
         <tr><td><strong>Esenciales</strong></td><td>Funcionamiento básico del sitio y preferencias de visualización.</td><td>No — son estrictamente necesarias</td></tr>
-        <tr><td><strong>Analíticas</strong> <span class="fill">[si se activa]</span></td><td>Medir tráfico y comportamiento agregado (p. ej. Google Analytics 4).</td><td>Sí</td></tr>
+        <tr><td><strong>Analíticas</strong></td><td>No se usan actualmente. Si se activan (p. ej. Google Analytics 4), servirán para medir tráfico agregado.</td><td>Sí, antes de activarse</td></tr>
       </tbody>
     </table>
     </div>
     <p>Hoy el sitio <strong>no ejecuta cookies de publicidad ni de retargeting</strong>. Si en el futuro se activa una herramienta de analítica, se actualizará esta tabla y el mecanismo de consentimiento.</p>
 
     <h3><span class="n">03</span>Cómo gestionar tus preferencias</h3>
-    <p>Puedes configurar tu navegador para bloquear o eliminar cookies en cualquier momento. Bloquear cookies esenciales puede afectar el funcionamiento de algunas partes del sitio. <span class="fill">[POR COMPLETAR: si se activa analítica, incorporar un banner que permita rechazar cookies no esenciales tan fácilmente como aceptarlas.]</span></p>
+    <p>Puedes configurar tu navegador para bloquear o eliminar cookies en cualquier momento. Bloquear cookies esenciales puede afectar el funcionamiento de algunas partes del sitio. Si en el futuro activamos cookies no esenciales, te pediremos tu consentimiento con un aviso que permita rechazarlas tan fácilmente como aceptarlas.</p>
 
     <h3><span class="n">04</span>Servicios de terceros</h3>
     <ul>
       <li><strong>Google Fonts</strong> — entrega de tipografías; puede registrar tu IP. Ver la política de privacidad de Google.</li>
       <li><strong>Web3Forms</strong> — procesamiento del formulario de cotización.</li>
+      <li><strong>Google Maps</strong> — mapa con la ubicación del taller; al cargarse, Google puede registrar tu IP y usar sus propias cookies.</li>
+      <li><strong>WhatsApp</strong> — si nos escribes por WhatsApp, esa conversación se rige además por las políticas de WhatsApp (Meta).</li>
     </ul>
   </section>
 
@@ -214,8 +238,8 @@
     <p>Para cualquier tema relacionado con privacidad, datos o cookies:</p>
     <ul>
       <li>Correo: <a class="inline" href="mailto:ventas.mgaete@gmail.com" data-mail="ventas.mgaete@gmail.com">ventas.mgaete@gmail.com</a></li>
-      <li>Fono: <a class="inline" href="tel:+56226466405">2 2646 6405</a> · WhatsApp: <a class="inline" href="https://wa.me/56931278297" target="_blank" rel="noopener">+56 9 3127 8297</a></li>
-      <li>Ubicación: Independencia, Santiago de Chile</li>
+      <li>Fono: <a class="inline" href="tel:+56226466405">2 2646 6405</a> · WhatsApp: <a class="inline" href="https://wa.me/56931278297" data-wa="cotizar" target="_blank" rel="noopener">+56 9 3127 8297</a></li>
+      <li>Ubicación: <a class="inline" href="https://www.google.com/maps/search/?api=1&query=3+de+Mayo+2595%2C+Independencia%2C+Santiago%2C+Chile" target="_blank" rel="noopener">3 de Mayo 2595, Independencia, Santiago de Chile</a></li>
     </ul>
   </section>
 </main>
@@ -233,11 +257,11 @@
   "use strict";
   var WA = "https://wa.me/56931278297";
   var MSG = {
-    cotizar:  "¡Hola Marco Gaete! 👋 Encontré su sitio web y quiero cotizar. ¿Me ayudan con precio, stock y plazo de entrega? 🙌",
-    despacho: "¡Hola Marco Gaete! 👋 Quiero coordinar un despacho (24–48 h en Santiago). Les paso mi comuna y lo que necesito. 🚚",
+    cotizar:  "¡Hola Marco Gaete! 👋 Encontré su sitio web y quiero cotizar. ¿Me ayudan con precio, stock y plazo para retiro? 🙌",
+    despacho: "¡Hola Marco Gaete! 👋 Quiero coordinar el retiro de mi pedido en el taller de Independencia. Si es un pedido de volumen, ¿se puede despachar? Les paso el detalle. 🔧",
     lote:     "¡Hola Marco Gaete! 👋 Necesito comprar por volumen / lote y me interesa precio especial. Les detallo producto, medida y cantidad. 📦",
     servicio: "¡Hola Marco Gaete! 👋 Necesito corte a medida o hilo a pedido. Les mando las medidas y el material para cotizar. 🛠️",
-    producto: "¡Hola Marco Gaete! 👋 Vi un producto en su web y quiero cotizarlo. ¿Me confirman precio, stock y plazo? 🙌"
+    producto: "¡Hola Marco Gaete! 👋 Vi un producto en su web y quiero cotizarlo. ¿Me confirman precio, stock y cuándo lo puedo retirar? 🙌"
   };
   document.querySelectorAll("[data-wa]").forEach(function(a){
     var k = a.getAttribute("data-wa") || "cotizar";
@@ -246,7 +270,7 @@
   });
   function gmail(to, su, body){ return "https://mail.google.com/mail/?view=cm&fs=1&to=" + encodeURIComponent(to) + "&su=" + encodeURIComponent(su) + "&body=" + encodeURIComponent(body); }
   var ESU = "Cotización web — Marco Gaete";
-  var EBODY = "Hola Marco Gaete, quiero cotizar:\n\n- Producto: \n- Medida / grado: \n- Cantidad: \n- Comuna de despacho: \n\n¡Gracias!";
+  var EBODY = "Hola Marco Gaete, quiero cotizar:\n\n- Producto: \n- Medida / grado: \n- Cantidad: \n- Retiro en taller o despacho (solo volumen): \n\n¡Gracias!";
   document.querySelectorAll("[data-mail]").forEach(function(a){
     var to = a.getAttribute("data-mail") || "ventas.mgaete@gmail.com";
     a.href = gmail(to, ESU, EBODY); a.target = "_blank"; a.rel = "noopener";
