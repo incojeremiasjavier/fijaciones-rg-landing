@@ -39,3 +39,10 @@
   for = "/sitemap.xml"
   [headers.values]
     Cache-Control = "public, max-age=86400"
+
+# Dominio oficial: la URL de Netlify redirige a marcogaete.cl
+[[redirects]]
+  from = "https://marco-gaete.netlify.app/*"
+  to = "https://marcogaete.cl/:splat"
+  status = 301
+  force = true
