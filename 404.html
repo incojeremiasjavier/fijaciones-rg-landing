@@ -107,7 +107,7 @@ section[id]{scroll-margin-top:96px}
   var ESU = "Cotización web — Marco Gaete";
   var EBODY = "Hola Marco Gaete, quiero cotizar:\n\n- Producto: \n- Medida / grado: \n- Cantidad: \n- Retiro en taller o despacho (solo volumen): \n\n¡Gracias!";
   document.querySelectorAll("[data-mail]").forEach(function(a){
-    var to = a.getAttribute("data-mail") || "ventas.mgaete@gmail.com";
+    var to = a.getAttribute("data-mail") || "ventas.marcosgaete@gmail.com";
     a.href = gmail(to, ESU, EBODY); a.target = "_blank"; a.rel = "noopener";
   });
 })();
